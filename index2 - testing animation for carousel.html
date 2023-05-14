@@ -1,0 +1,2218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RelayPro Engineering Services</title>
+    <script src="d3.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="header" href="#home" id="headerHome">Home</a></li>
+                <li><a class="header" href="#about">About</a></li>
+                <li><a class="header" href="#blog">Blog</a></li>
+                <li><a class="header" href="#YouTube">YouTube</a></li>
+                <li><a class="header" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="container" id="carousel">
+                <div class="slide active" id="slide1">
+                    <div class="col-md-4" id="svgTitle"></div>
+                </div>
+                <div class="slide" id="slide2">
+                    <div class="col-md-4" id="vis"></div>
+                    <div style="position: absolute; top: 40px; left: 600px; z-index: 999;">Demystifying Protection Relay Fundamental, Operation and Testing: A Comprehensive Guide</div>
+                </div>
+                <div class="slide" id="tabs-2">
+                    <table id="table_variable" >
+                        <tr>
+                            <td id="cell_left" > <div id="viz">  </div>	</td>
+                            <td id="cell_right" style="vertical-align: top;">
+                                <table id="tableRight" >
+                                    <tr>
+                                        <td colspan="2" >
+                                            <div id="viz_polar">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="radioInput" >
+                                        </td>
+                                        <td>
+                                            <div id ="data">
+                                            </div> 
+                                        </td>	                                           
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr> 
+                    </table>	 
+                    <div style="position: absolute; top: 40px; left: 600px; z-index: 999;">Exploring Waveform Parameters and COMTRADE Files: A Beginner's Guide</div>               
+                </div>
+                <div class="slide" id="second_slide" >
+
+                    <div id="topMenueDiv" class="menue2"> 
+                        <table id="topMenueTable" class="menue2" width="77%" style="color: steelblue;font-size:16px; margin-bottom:1%">
+                            <tr id="topMenueButtons">
+                                <td id="tdButtons1"> 
+                        <!--    <label >
+                                        <input type="checkbox" name="switch" onclick="toggleSwitch(this)" checked>
+                                        Stop
+                                    </label>  -->
+                                </td>
+                                <td id="tdButtons2">  
+                        <!-- 	<label >
+                                        <input type="checkbox" name="radiowaveABC" onclick="toggleShowA(this)" id="radioABC">
+                                        ABC
+                                    </label>  --> 
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="trig"  class="menue2" > </div>
+                    <div id="char" class="menue2"> 
+                
+                        <table id="char_variables" class="menue2" width="75%" style="color: steelblue;font-size:16px">
+                            <tr id="variablesForChar">
+                                <td id="tdChar1"> 
+                                <label >
+                                </label> 
+                                </td>	
+                                <td id="tdChar2" style="text-align:center;">
+                                </td>						
+                                <td id="tdChar3" style="text-align:center;">
+                                </td>
+                                <td id="tdChar4" style="text-align:left;">
+                                </td>				
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="ForChar"> </div>
+                    <div style="position: absolute; top: 40px; left: 600px; z-index: 999;">Master the basics of overcurrent and directional overcurrent relay protection with our comprehensive video tutorial series. Learn about different types of overcurrent relays, principles of directional overcurrent protection, and coordination of overcurrent relays. Perfect for engineers, students, and industry professionals. Watch now!
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Cesar Tech Services</h2>
+                <p>Cesar Tech Services is a professional freelance consultancy founded by a highly skilled individual with an MBA, Salesforce.com certification, and an Engineering degree from Ecole Polytechnique Brussels. Fluent in French, English, Portuguese, and Spanish, Cesar Tech Services offers a diverse range of services spanning web development, engineering solutions, and IT consulting.</p>
+            </div>
+        </section>
+
+        <section id="blog">
+            <div class="container">
+                <h2>Blog</h2>
+                <p>Latest blog posts...</p>
+                <!-- Add more content as needed -->
+            </div>
+        </section>
+
+
+        <section id="YouTube">
+            <div class="container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qKMqpc3_wRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FFpwSxec-pA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Interested in working with Cesar Tech Services? We'd be happy to discuss your web development, engineering solutions, or IT consulting needs. Get in touch using the contact information below, or connect with us on LinkedIn.</p>
+                <address>
+                    <strong>Location:</strong> Portugal<br>
+                    <strong>Phone:</strong> +351 967 xxx xxx<br>
+                    <strong>Email:</strong> <a href="mailto:photoxxx@gmail.com">photoxxx@gmail.com</a><br>
+                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/cesar-augusto-rosa-delgado-6a533b6" target="_blank">linkedin.com/in/cesar-augusto-rosa-delgado-6a533b6</a>
+                </address>
+            </div>
+        </section>
+        <script>
+            window.addEventListener("DOMContentLoaded", function() {
+                const headerHeight = document.querySelector("header").clientHeight;
+                const carousel = document.querySelector("#carousel");
+                const remainingHeight = window.innerHeight - headerHeight;
+                carousel.style.height = `${remainingHeight}px`;
+            });
+
+            const reloadBtn = document.getElementById("headerHome");
+            reloadBtn.addEventListener("click", function() {
+                location.reload();
+                });
+
+            var durationSlide = 10000;
+                // Set up carousel
+                const slideWidth = 300;
+                const carousel = d3.select("#carousel");
+                const slides = carousel.selectAll(".slide");
+                const numSlides = slides.size();
+
+                // Set initial active slide
+                let activeSlide = 0;
+
+                // Advance to next slide every 3 seconds
+                if (activeSlide === 0) {
+                let autoAdvance = setInterval(() => {
+                    activeSlide = (activeSlide + 1) % numSlides;
+                    updateSlide();
+                }, durationSlide);
+                }
+                else {
+                    durationSlide=5000;console.log("in");
+                let autoAdvance = setInterval(() => {
+                    activeSlide = (activeSlide + 1) % numSlides;
+                    updateSlide();
+                }, durationSlide);
+                }
+                
+                // Update slide based on activeSlide
+                function updateSlide() {
+                    // Compute the new active slide
+                    const newActiveSlide = (activeSlide + 1) % numSlides;
+
+                    // If the current slide is the first slide, skip it
+                    if (activeSlide === 0) {
+                        activeSlide = 1;
+                    }
+                    // Set the new active slide
+                    slides.classed("active", (_, i) => i === activeSlide);
+                    // Compute the position of the new active slide
+                    const newSlidePosition = -activeSlide * slideWidth;
+
+                    // Animate the carousel to the new position
+                    carousel
+                        .transition()
+                        .duration(500)
+                        .ease(d3.easeQuadInOut)
+                        .style("transform", `translateX(${newSlidePosition}px)`);
+                    }
+
+                    const element = document.querySelector('a[href="#home"]');
+                    const rect = element.getBoundingClientRect();
+                    const x = rect.left;
+
+                    // Get a reference to the div element
+                    const divElements = document.getElementsByClassName("container");
+
+                    for (let i = 1; i < divElements.length; i++) {
+                        divElements[i].style.marginLeft = x + "px";
+                        }
+
+                    document.addEventListener("DOMContentLoaded", function() {
+                    // Hide all sections except Home on page load
+                    const sections = document.querySelectorAll("section:not(#home)");
+                    sections.forEach(function(section) {
+                        section.style.display = "none";
+                    });
+
+                    // Show the corresponding section when a navigation link is clicked
+                    const links = document.querySelectorAll("nav a");
+                    links.forEach(function(link) {
+                        link.addEventListener("click", function(e) {
+                        e.preventDefault();
+                        const targetSection = link.getAttribute("href");
+                        const sections = document.querySelectorAll("section");
+                        sections.forEach(function(section) {
+                            section.style.display = "none";
+                        });
+                        document.querySelector(targetSection).style.display = "block";
+                        });
+                    });
+                    });        
+
+                    //--------- Intro first slide
+                    var svgTitle = d3.select("#svgTitle").append("svg")
+                        .attr("width", "100%")
+                        .attr("height", "100%")
+                        .attr("id", "svgTitleText")
+                        .style("display","block"); 
+
+                    var textElement = svgTitle.append("text")
+                        .attr("font-size", "20px")       
+                        .attr("x", "50%")
+                        .attr("y", "50%")
+                        .attr("id", "svgTitleTextContent")
+                        .attr("text-anchor", "middle")
+                        .attr("stroke", "steelBlue");
+
+                    textElement.append("tspan")
+                        .text("The Ultimate Guide to Relay Protection Engineering:");
+
+                    textElement.append("tspan")
+                        .text(" Unlock the Secrets with Visual Tools")
+                        .attr("x", "50%")
+                        .attr("dy", "1.5em");
+
+                    textElement.append("tspan")
+                        .text(" for Students and Seasoned Engineers")
+                        .attr("x", "50%")
+                        .attr("dy", "1.5em");
+
+                    textElement.transition()
+                        .duration(1500)
+                        .attr("font-size", "30px");
+        
+            let widthbbox = 1300;
+            let heightbbox = 300;
+
+                (function() {
+            var wstring = "100%", hstring = "100%", p = 50;      
+        
+            var vis = d3.select("#vis").append("svg")
+                .attr("width", wstring)
+                .attr("height", hstring)
+                .attr("id", "vis_svg")
+                .style("display","block");          
+
+            setTimeout(function() {
+                const svg_vis = d3.select('#vis');
+                const rect = svg_vis.node().getBoundingClientRect();
+                widthbbox = rect.width;
+                heightbbox = rect.height;
+            }, durationSlide+500);
+
+            var w = widthbbox, h = heightbbox;
+            var wbis=w,hbis=h,tx=w/4,ty=hbis/2,
+                textx=tx-160,texty=ty-18;  
+
+            ta=86,tb=ta+40,tc=tb+40,td=30,tdd=td+55;
+                
+            var mag = 50, p0x =w/2, p0y =h;
+            var va = [p0x+mag, p0y],
+                vb = [p0x-mag/2, p0y + (mag * Math.sqrt(3)/ 2)],
+                vc = [p0x-mag/2, p0y - (mag * Math.sqrt(3)/ 2)],
+                p0 = [p0x,p0y],
+                psa = [va],
+                psb = [vb],
+                psc = [vc];
+                
+        
+            var dist = function(va) {
+            var x = va[0] - p0x;
+            var y = va[1] - p0y;
+            return Math.sqrt(x * x + y * y);
+            };
+            var angle = function(va) {
+            
+            return Math.atan2(va[1],va[0]) *180/Math.PI;
+            };
+            
+            var polyline = function(d) {
+                return d.map(function(x) {
+                    return x.join(",");
+                }).join(" ");
+                };
+        
+                //-------------------------------
+                
+                vis.append("text")
+                        .attr("x", widthbbox/2)
+                        .attr("y", "40px")
+                        .attr("font-size","20px")
+                        .attr("stroke","steelBlue")
+                        .text("Hello, world!");
+                
+                vis.append("vis:defs").selectAll("marker")
+                    .data(["arrow"])
+                    .enter().append("vis:marker")
+                    .attr("id", "marka")
+                    .attr("viewBox", "0 -2.5 5 5")
+                    .attr("refX", 5)
+                    .attr("refY", 0)
+                    .attr("markerWidth", 4)
+                    .attr("markerHeight", 5)
+                    .attr("orient", "auto")
+                    .append("vis:path")
+                    .attr("d", "M0,-2.5L5,0L0,2.5,z");
+                
+                vis.append("vis:defs").selectAll("marker")
+                    .data(["arrow"])
+                    .enter().append("vis:marker")
+                    .attr("id", "markb")
+                    .attr("viewBox", "0 -2.5 5 5")
+                    .attr("refX", 5)
+                    .attr("refY", 0)
+                    .attr("markerWidth", 4)
+                    .attr("markerHeight", 5)
+                    .attr("orient", "auto")
+                    .append("vis:path")
+                    .attr("d", "M0,-2.5L5,0L0,2.5,z");
+                
+                vis.append("vis:defs").selectAll("marker")
+                    .data(["arrow"])
+                    .enter().append("vis:marker")
+                    .attr("id", "markc")
+                    .attr("viewBox", "0 -2.5 5 5")
+                    .attr("refX", 5)
+                    .attr("refY", 0)
+                    .attr("markerWidth", 4)
+                    .attr("markerHeight", 5)
+                    .attr("orient", "auto")
+                    .append("vis:path")
+                    .attr("d", "M0,-2.5L5,0L0,2.5,z");
+                
+                vis.append("vis:defs").selectAll("marker")
+                    .data(["arrow"])
+                    .enter().append("vis:marker")
+                    .attr("id", "mark2")
+                    .attr("viewBox", "0 -2.5 5 5")
+                    .attr("refX", 5)
+                    .attr("refY", 0)
+                    .attr("markerWidth", 4)
+                    .attr("markerHeight", 5)
+                    .attr("orient", "auto")
+                    .append("vis:path")
+                    .attr("d", "M0,-2.5L5,0L0,2.5,z");
+                
+                vis.append("vis:defs").selectAll("marker")
+                    .data(["arrow"])
+                    .enter().append("vis:marker")
+                    .attr("id", "mark1")
+                    .attr("viewBox", "0 -2.5 5 5")
+                    .attr("refX", 5)
+                    .attr("refY", 0)
+                    .attr("markerWidth", 4)
+                    .attr("markerHeight", 5)
+                    .attr("orient", "auto")
+                    .append("vis:path")
+                    .attr("d", "M0,-2.5L5,0L0,2.5,z");       
+                
+                vis.append("vis:defs").selectAll("marker")
+                    .data(["arrow"])
+                    .enter().append("vis:marker")
+                    .attr("id", "mark0")
+                    .attr("viewBox", "0 -2.5 5 5")
+                    .attr("refX", 5)
+                    .attr("refY", 0)
+                    .attr("markerWidth", 4)
+                    .attr("markerHeight", 5)
+                    .attr("orient", "auto")
+                    .append("vis:path")
+                    .attr("d", "M0,-2.5L5,0L0,2.5,z");     
+                
+                //-----------START OF FUNCTION MY LOOP -----
+
+                var i = 1;      
+                function myLoop () {         
+                    setTimeout(function () {    
+                            var update = function() {
+                                dim1=widthbbox/2.5-(5*Math.cos((parseInt(i-1)*Math.PI/100)));
+                                dim2=heightbbox/2.5-(4*Math.sin((1.5*parseInt(i-1)*Math.PI/100)));
+                            psa = [va];  
+                                psb = [vb];
+                                psc = [vc];
+                            
+                                va=[p0x+dim1/2*Math.cos((parseInt(i-1)*Math.PI/100)),p0y+dim2/2*Math.sin((parseInt(i-1)*Math.PI/100))];
+                                vb=[p0x-dim1/2*Math.cos((parseInt(i-1)*Math.PI/400)),p0y+dim1/2* (Math.sqrt(3)/ 2)*Math.sin((parseInt(i-1)*Math.PI/400))];
+                                vc=[p0x-dim2/2*Math.cos((parseInt(i-1)*Math.PI/200)),p0y-dim2/2* (Math.sqrt(3)/ 2)*Math.sin((parseInt(i-1)*Math.PI/200))];
+                                
+                            var veca = [va[0]-p0x, va[1]-p0y],
+                                vecb = [vb[0]-p0x, vb[1]-p0y],
+                                vecc = [vc[0]-p0x, vc[1]-p0y];
+                        
+                                var ampa = dist(va),
+                                ampb = dist(vb),
+                                ampc = dist(vc),
+                                anglea = angle (veca),
+                                angleb = angle(vecb),
+                                anglec = angle(vecc);
+                        
+                            var va2 = [(veca[0]- (vecb[0]+vecc[0])/2 - (Math.sqrt(3)/ 2)*(vecb[1]-vecc[1]))/3, (veca[1]- ((vecb[1]+vecc[1])/2) + (Math.sqrt(3)/ 2)*(vecb[0]-vecc[0]))/3],
+                                vb2 = [(-va2[0]+va2[1]* Math.sqrt(3))/2,(-va2[1]-va2[0]* Math.sqrt(3))/2 ],
+                                vc2 = [(-va2[0]-va2[1]* Math.sqrt(3))/2,(-va2[1]+va2[0]* Math.sqrt(3))/2],
+                                p0 = [p0x,p0y],
+                                va2bis=[va2[0]+p0x/2,va2[1]+p0y/2],
+                                vb2bis=[vb2[0]+p0x/2,vb2[1]+p0y/2],
+                                vc2bis=[vc2[0]+p0x/2,vc2[1]+p0y/2],
+                                ps2bis=[va2, vb2, vc2], ps2ter=[va2[0]+p0x,va2[1]+p0y ], amp2 = dist(ps2ter),angle2 = angle(va2),
+                                va2= [va2[0]+p0x,va2[1]+p0y],
+                                vb2= [vb2[0]+p0x,vb2[1]+p0y],
+                                vc2= [vc2[0]+p0x,vc2[1]+p0y],
+                                ps2 = [va2, vb2, vc2];      
+                                    
+                            data = [ [p0[0], p0[1]],[p0[0], p0[1]],[p0[0], p0[1]] ];
+                            data3 = [ [0, 0],[0, 0],[0, 0] ];
+                        
+                        
+                        
+                            var va1 = [((veca[0]- (vecb[0]+vecc[0])/2 + (Math.sqrt(3)/ 2)*(vecb[1]-vecc[1]))/3),( (veca[1]- (vecb[1]+vecc[1])/2 - Math.sqrt(3)/ 2*(vecb[0]-vecc[0]))/3)],
+                                vb1 = [(-va1[0]-(va1[1]* Math.sqrt(3)))/2,(-va1[1]+va1[0]* Math.sqrt(3))/2 ],
+                                vc1 = [(-va1[0]+va1[1]* Math.sqrt(3))/2,(-va1[1]-va1[0]* Math.sqrt(3))/2],
+                                p0 = [p0x,p0y],
+                                va1bis=[va1[0],va1[1]],
+                                vb1bis=[vb1[0],vb1[1]],
+                                vc1bis=[vc1[0],vc1[1]],
+                                ps1bis=[va1, vb1, vc1], ps1ter=[va1[0]+p0x,va1[1]+p0y ], amp1 = dist(ps1ter),  angle1 = angle(va1) , 
+                                
+                                va1= [va1[0]+va2[0],va1[1]+va2[1]],
+                                vb1= [vb1[0]+vb2[0],vb1[1]+vb2[1]],
+                                vc1= [vc1[0]+vc2[0],vc1[1]+vc2[1]],
+                                ps1 = [va1, vb1, vc1];   
+                            data1 = [[va2[0] , va2[1]],[vb2[0] , vb2[1] ],[vc2[0] , vc2[1] ]];
+                            
+                        
+                            var va0 = [(veca[0]+ vecb[0]+vecc[0])/3, (veca[1]+ vecb[1]+vecc[1])/3],
+                                vb0 = [(veca[0]+ vecb[0]+vecc[0])/3,(veca[1]+ vecb[1]+vecc[1])/3 ],
+                                vc0 = [(veca[0]+ vecb[0]+vecc[0])/3,(veca[1]+ vecb[1]+vecc[1])/3],
+                                p0 = [p0x,p0y],               
+                                ps0bis=[va0, vb0, vc0],  angle0 = angle (va0), ps0ter=[va0[0]+p0x,va0[1]+p0y ],               
+                                va0= [va0[0]+va1bis[0]+va2[0],va0[1]+va1bis[1]+va2[1]],amp0 = dist(ps0ter),
+                                vb0= [vb0[0]+vb1bis[0]+vb2[0],vb0[1]+vb1bis[1]+vb2[1]],
+                                vc0= [vc0[0]+vc1bis[0]+vc2[0],vc0[1]+vc1bis[1]+vc2[1]],
+                                ps0 = [va0, vb0, vc0];  
+                        
+                            data2 = [[va1bis[0]+va2[0] , va1bis[1]+va2[1]],[vb1bis[0]+vb2[0], vb1bis[1]+vb2[1] ],[vc1bis[0]+vc2[0] , vc1bis[1]+vc2[1] ]];
+                        
+                        
+                        
+                            var vectora = vis.selectAll("polyline.vectora")
+                                .data(psa);
+                        
+                            vectora.enter().append("polyline")
+                                .attr("class", "vectora")
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i + 1) % 3],d]);
+                                    });
+                        
+                            vectora
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i + 1) % 3],d]);
+                                });
+                        //------------------Marker A--------
+                        
+                            var vectora = vis.selectAll("polyline.vectora")
+                                .data(psa);
+                            vectora.enter().append("polyline")
+                                .attr("class", "vectora")
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i + 1) % 3],d]);
+                                    })
+                                .append("marker")
+                                .attr("marker-end", "url(#marka)")
+                                ;
+                        
+                            vectora
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i + 1) % 3],d]);
+                            
+                                })
+                                .attr("marker-end", "url(#marka)")
+                        ;  
+                        //----------------------------------------
+                        
+                        //------------------Text A--------
+                        
+                        var texta = vis.selectAll("text.texta")
+                                                .data(psa);
+                        
+                                        texta.enter()
+                                                .append("text")
+                                                .attr("class", "texta")
+                                                .attr("x", function(d, i) {return (d.x);})
+                                                .attr("y", function (d,i) {return (d.y);})
+                                        .text( "Va = " + veca[0].toFixed(0) + " +j " +veca[1].toFixed(0));
+                                
+                        texta
+                                        .attr("x", function (d,i) {return (d.x);})
+                                        .attr("y", function (d,i) {return (d.y);})
+                                        .text("Va = " + veca[0].toFixed(0) + " +j " +veca[1].toFixed(0) )
+                                        .attr("font-family", "sans-serif")
+                                        .attr("font-size", "40px")
+                                        .attr("transform", "translate(" 
+                                        + (va[0]-(100) ) + "," 
+                                        + (va[1]-(20) )  + ")")
+                                        .attr("fill", "#DC143C");
+                        
+                        //----------------------------------------
+                        
+                            var vectorb = vis.selectAll("polyline.vectorb")
+                                .data(psb);
+                                vectorb.enter().append("polyline")
+                                .attr("class", "vectorb")
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i + 1) % 3],d]);
+                                });
+                                
+                                vectorb
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i + 1) % 3],d]);
+                                });
+                        
+                        //-----------------------Marker B---
+                        
+                            var vectorb = vis.selectAll("polyline.vectorb")
+                                .data(psb);
+                            vectorb.enter().append("polyline")
+                                .attr("class", "vectorb")
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i + 1) % 3],d]);
+                                    })
+                                .append("marker")
+                                .attr("marker-end", "url(#markb)")
+                                ;
+                        
+                            vectorb
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i + 1) % 3],d]);
+                            
+                                })
+                                .attr("marker-end", "url(#markb)")
+                        ;  
+                        //----------------------------------------
+                        
+                        //------------------Text B--------
+                        
+                        
+                        var textb = vis.selectAll("text.textb")
+                                                .data(psb);
+                                            textb.enter()
+                                                .append("text")
+                                                .attr("class", "textb")
+                                                .attr("x", function(d, i) {return (d.x);})
+                                                .attr("y", function (d,i) {return (d.y);})
+                                        .text( "Vb = " + vecb[0].toFixed(0) + " +j " +vecb[1].toFixed(0));
+                        
+                        textb
+                                        .attr("x", function (d,i) {return (d.x);})
+                                        .attr("y", function (d,i) {return (d.y);})
+                                        .text("Vb = " + vecb[0].toFixed(0) + " +j " +vecb[1].toFixed(0) )
+                                        .attr("font-family", "sans-serif")
+                                        .attr("font-size", "40px")
+                                        .attr("transform", "translate(" 
+                                        + (vb[0] -20) + "," 
+                        
+                                        + (vb[1] -20)  + ")")
+                                        .attr("fill", "#e2de50"); 
+                        //----------------------------------------
+                            var vectorc = vis.selectAll("polyline.vectorc")
+                                .data(psc);
+                                vectorc.enter().append("polyline")
+                                .attr("class", "vectorc")
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i + 1) % 3],d]);
+                                });
+                        
+                                vectorc
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i + 1) % 3],d]);
+                                });        
+                        
+                        //--------------------Marker C------
+                        
+                            var vectorc = vis.selectAll("polyline.vectorc")
+                                .data(psc);
+                            vectorc.enter().append("polyline")
+                                .attr("class", "vectorc")
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i + 1) % 3],d]);
+                                    })
+                                .append("marker")
+                                .attr("marker-end", "url(#markc)")
+                                ;
+                        
+                            vectorc
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i + 1) % 3],d]);
+                            
+                                })
+                                .attr("marker-end", "url(#markc)")
+                        ;  
+                        //----------------------------------------
+                        
+                        //------------------Text C--------
+                        
+                        var textc = vis.selectAll("text.textc")
+                                                .data(psc);             
+                                            textc.enter()
+                                                .append("text")
+                                                .attr("class","textc")
+                                                .attr("x", function(d, i) {return (d.x);})
+                                                .attr("y", function (d,i) {return (d.y);})
+                                        .text( "Vc = " + vecc[0].toFixed(0) + " +j " +vecc[1].toFixed(0));
+                        
+                        
+                        
+                        textc
+                                        .attr("x", function (d,i) {return (d.x);})
+                                        .attr("y", function (d,i) {return (d.y);})
+                                        .text("Vc = " + vecc[0].toFixed(0) + " +j " +vecc[1].toFixed(0) )
+                                        .attr("font-family", "sans-serif")
+                                        .attr("font-size", "40px")
+                                        .attr("transform", "translate(" 
+                                        + (vc[0]-20 ) + "," 
+                                        + (vc[1]-20 )  + ")")
+                                        .attr("fill", "blue")
+                                        .attr("background-color","white");
+                        
+                        //----------------------------------------
+                        
+                            var vector2 = vis.selectAll("polyline.vector2")
+                                .data(ps2);
+                            vector2.enter().append("polyline")
+                                .attr("class", "vector2")
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i + 1) % 3],d]);
+                            });
+                                
+                            vector2
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i + 1) % 3],d]);
+                            });
+                        
+                        
+                        //--------------------------
+                        
+                            var vector2 = vis.selectAll("polyline.vector2")
+                                .data(ps2);
+                            vector2.enter().append("polyline")
+                                .attr("class", "vector2")
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i + 1) % 3],d]);
+                                    })
+                                .append("marker")
+                                .attr("marker-end", "url(#mark2)")
+                                ;
+                        
+                            vector2
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i + 1) % 3],d]);
+                            
+                                })
+                                .attr("marker-end", "url(#mark2)")
+                        ;  
+                        
+                        //----------------------------------------    
+                            var vector1 = vis.selectAll("polyline.vector1")
+                                .data(ps1);
+                            vector1.enter().append("polyline")
+                                .attr("class", "vector1")
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i ) % 3],d]);
+                            });
+                                
+                            vector1
+                                .attr("points", function(d, i) {
+                                    return polyline([data1[(i ) % 3],d]);
+                            });
+                        
+                        //--------------------------
+                        
+                            var vector1 = vis.selectAll("polyline.vector1")
+                                .data(ps1);
+                            vector1.enter().append("polyline")
+                                .attr("class", "vector1")
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i ) % 3],d]);
+                                    })
+                                .append("marker")
+                                .attr("marker-end", "url(#mark1)")
+                                ;
+                        
+                            vector1
+                                .attr("points", function(d, i) {
+                                    return polyline([data1[(i ) % 3],d]);
+                            
+                                })
+                                .attr("marker-end", "url(#mark1)")
+                        ;  
+                        //----------------------------------------
+                        
+                            var vector0 = vis.selectAll("polyline.vector0")
+                                .data(ps0);
+                            vector0.enter().append("polyline")
+                                .attr("class", "vector0")
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i ) % 3],d]);
+                            });
+                                
+                            vector0
+                                .attr("points", function(d, i) {
+                                    return polyline([data2[(i ) % 3],d]);
+                            });
+                            
+                        //--------------------------
+                        
+                            var vector0 = vis.selectAll("polyline.vector0")
+                                .data(ps0);
+                            vector0.enter().append("polyline")
+                                .attr("class", "vector0")
+                                .attr("points", function(d, i) {
+                                    return polyline([data[(i ) % 3],d]);
+                                    })
+                                .append("marker")
+                                .attr("marker-end", "url(#mark0)")
+                                ;
+                        
+                            vector0
+                                .attr("points", function(d, i) {
+                                    return polyline([data2[(i ) % 3],d]);
+                            
+                                })
+                                .attr("marker-end", "url(#mark0)");  
+                            };
+                    
+                        update();i++;  
+                                            //  increment the counter
+                                if (i < 2500) {            //  if the counter < 10, call the loop function
+                                if (i===2499) {i=1;} ;
+                                myLoop();             //  ..  again which will trigger another 
+                                }                        //  ..  setTimeout()
+                        
+                        }, 45);
+                    }
+                    
+                    //-----------END OF FUNCTION MY LOOP -----
+                        
+                        myLoop();
+                        vis
+                                .attr("width", "100%");
+                
+                })();
+
+                //--------------------------- waveform 
+                // Constants for width, height, and padding
+                const wWaveform = 2*widthbbox/3;
+                const hWaveform = 2*heightbbox/3;
+                const padding = 20;
+
+                // Additional variables
+                const numsample = 300;
+                let duration = 0;
+
+                // Scaling for x-axis and y-axis
+                var xScale = d3.scale.linear()
+                    .domain([0.0001, numsample])
+                    .range([2 * padding, wWaveform - padding]);
+
+                // Setting up x-axis and y-axis
+                var xAxis = d3.svg.axis()
+                    .scale(xScale)
+                    .orient("bottom")
+                    .ticks(5);
+
+                // Calculation for i_mul
+                MAX_ = 110;
+
+                let i_mul = (Math.sqrt(2) * MAX_) / 17.67;
+
+                var MAX_yScale = 0;
+                var MAX_yScaleRight = 0;
+                var temp=0;
+                    
+                var dataset = generateDataset(numsample, i_mul, 0, true);
+                var dataset4 = generateDataset(numsample, i_mul, 0,  false);
+
+                const yValues1 = dataset.map(item => item[1]);
+                const yValues2 = dataset4.map(item => item[1]);
+                const maxAbsValue1 = Math.max(
+                ...yValues1.map(value => Math.abs(value))
+                );
+                const maxAbsValue2 = Math.max(
+                ...yValues2.map(value => Math.abs(value))
+                );
+
+                MAX_yScale=maxAbsValue1;
+                MAX_yScaleRight =maxAbsValue2;
+
+                var dataset2 = generateDataset(numsample, i_mul, -2*Math.PI/3, true);
+                var dataset3 = generateDataset(numsample, i_mul, 2*Math.PI/3, true);
+                var dataset5 = generateDataset(numsample, i_mul, -2*Math.PI/3, false);
+                var dataset6 = generateDataset(numsample, i_mul, 2*Math.PI/3,  false);
+
+                var yScale = d3.scale.linear()
+                    .domain([-MAX_yScale, MAX_yScale])
+                    .range([hWaveform - padding / 2, padding]);
+
+                var yAxis = d3.svg.axis()
+                    .scale(yScale)
+                    .orient("left")
+                    .ticks(5);
+
+                var yScaleRight = d3.scale.linear()
+                    .domain([-MAX_yScaleRight, MAX_yScaleRight])
+                    .range([hWaveform - padding / 2, padding]);
+
+                var yAxisRight = d3.svg.axis()
+                    .scale(yScaleRight)
+                    .orient("right")
+                    .ticks(5);	
+
+                // Creating the SVG container
+                var svgB = d3.select("#viz")
+                    .append("svg")
+                    .attr("width", wWaveform )
+                    .attr("height", 3 * hWaveform)
+                    .attr("margin-top",8 + "px")
+                    .attr("id", "viz_coordinates");
+
+
+
+                var line1 = generateLine(dataset, "myline", "red", 0);
+                var lineFunc = line1.lineFunc;
+
+                var line2 = generateLine(dataset2, "myline2", "yellow", hWaveform);
+                var lineFunc2 = line2.lineFunc;
+
+                var line3 = generateLine(dataset3, "myline3", "blue", 2*hWaveform);
+                var lineFunc3 = line3.lineFunc;
+
+                var line4 = generateLine(dataset4, "myline4", "red", 0, yScaleRight);
+                var lineFunc4 = line4.lineFunc;
+
+                var line5 = generateLine(dataset5, "myline5", "yellow", hWaveform, yScaleRight);
+
+                var line6 = generateLine(dataset6, "myline6", "blue", 2*hWaveform, yScaleRight);
+
+                // Adding axis to the SVG
+                addAxis("x-1", "y-1", 0, padding / 3 + hWaveform / 2, padding * 2, 0);
+                addAxis("x-2", "y-2", 0, padding / 3 + hWaveform + hWaveform / 2, padding * 2, hWaveform);
+                addAxis("x-3", "y-3", 0, padding / 3 + 2 * hWaveform + hWaveform / 2, padding * 2, 2 * hWaveform);
+
+               var body = d3.selectAll("#viz_coordinates").on("mousemove", function() { move(d3.mouse(this)); });
+
+
+                 var p0 = [0.0001 + 2 * padding, hWaveform * .001],p1 = [ wWaveform - padding, hWaveform * .001];
+
+//                  setTimeout(function(){
+
+ 
+//                     for (let iMove = 0; iMove < 300 ; iMove++) {
+//                     (function(i) {
+//                         setTimeout(function() {
+//                             move([3 * padding + i, hWaveform * .5]);
+//                         }, i * 100);
+//                             //if (i===599) {i=0}
+//                     })(iMove);
+//                 }
+                    
+// /*                 for (let iMove = 0; iMove < numsample * 2; iMove++) {
+//                     setTimeout(move([3 * padding + iMove, hWaveform * .5]), 750);
+//                 } */
+
+//                  },durationSlide*2+500);
+
+const targetElement = document.querySelector('#tabs-2');
+// Create a new MutationObserver
+const observer = new MutationObserver((mutationsList, observer) => {
+  // Loop through each mutation that was observed
+  for (let mutation of mutationsList) {
+    // Check if the class attribute was modified and now contains the 'active' class
+    if (mutation.type === 'attributes' && mutation.attributeName === 'class' && targetElement.classList.contains('active')) {
+      // Start your loop here
+
+ //                setTimeout(function(){
+
+ 
+                    for (let iMove = 0; iMove < 400 ; iMove++) {
+                    (function(i) {
+                        setTimeout(function() {
+                            move([3 * padding + 2*i, hWaveform * .5]);
+                        }, i * 35);
+                            //if (i===599) {i=0}
+                    })(iMove);
+                }
+                    
+/*                 for (let iMove = 0; iMove < numsample * 2; iMove++) {
+                    setTimeout(move([3 * padding + iMove, hWaveform * .5]), 750);
+                } */
+
+   //              },durationSlide*2+500);
+
+    }
+  }
+});
+
+// Start observing the target element for changes to its class attribute
+observer.observe(targetElement, { attributes: true });
+
+
+                var projection = body.append("path").attr("id", "line_projection").attr("transform", "translate(" + (0) + "," + 0 + ")")
+                .attr("d","M502.8500061035156,825L502.8500061035156,0.275");
+
+                var data = d3.range(0, 2 * Math.PI, .01).map(function(t) {
+                return [t, Math.sin(2 * t) * Math.cos(2 * t)];
+                });
+
+                //----------- polar
+
+                var width_polar = widthbbox/4,
+                    height_polar = widthbbox/4,
+                    min_of_dimensions = Math.min(width_polar,height_polar,Math.max(100,width_polar,height_polar)),
+                    radius = ((min_of_dimensions)/2) - padding ;
+
+                var r = d3.scale.linear()
+                    .domain([0, MAX_yScale])
+                    .range([0, radius]);
+                var rv = d3.scale.linear()
+                    .domain([0, MAX_yScaleRight])
+                    .range([0, radius]);
+
+                var svgA = d3.select("#viz_polar").append("svg").attr("width", "100%").attr("height", height_polar).append("g").attr("transform","translate(" + ((width_polar/2)+padding/2) + "," + ((height_polar/2)) + ")");
+                var gr = svgA.append("g").attr("class", "r axis").selectAll("g").data(r.ticks(5).slice(1)).enter().append("g");
+                var grv = svgA.append("g").attr("class", "r axis").selectAll("g").data(rv.ticks(5).slice(1)).enter().append("g");
+
+                gr.append("circle").attr("r", r);
+                gr.append("text").attr("y", function(d) { return -r(d) - 4; }).attr("transform", "rotate(15)").style("text-anchor", "middle").text(function(d) { return d; });
+                grv.append("text").attr("y", function(d) { return -rv(d) - 4; }).attr("transform", "rotate(-15)").style("text-anchor", "middle").text(function(d) { return d; });
+
+                var ga = svgA.append("g")
+                    .attr("class", "a axis")
+                .selectAll("g")
+                    .data(d3.range(0, 360, 30))
+                .enter().append("g")
+
+                    .attr("stroke","#777")
+                    .style("stroke-dasharray",("1,4"))
+                    .attr("transform", function(d) { return "rotate(" + -d + ")"; });
+
+                ga.append("line")
+                    .attr("x2", radius);
+
+                ga.append("text")
+                    .attr("x", radius + 8)
+                    .attr("dy", ".35em")
+                    .style("text-anchor", function(d) { return d < 270 && d > 90 ? "end" : null; })
+                    .attr("transform", function(d) { return d < 270 && d > 90 ? "rotate(180 " + (radius + 6) + ",0)" : null; })
+                    .attr("stroke","#777")
+                    .style("stroke-dasharray","none")
+                    .text(function(d) { return d + "°"; });
+
+                ta=86,tb=ta+40,tc=tb+40,td=30,tdd=td+55;
+
+                    
+                var mag = MAX_yScaleRight, magI = MAX_yScale, p0x =(0)/4, p0y =(0)/4;
+                var va = [p0x+mag, p0y],
+                    vb = [p0x-mag/2, p0y + (mag * Math.sqrt(3)/ 2)],
+                    vc = [p0x-mag/2, p0y - (mag * Math.sqrt(3)/ 2)],
+                    po = [p0x,p0y],
+                    psa = [va],
+                    psb = [vb],
+                    psc = [vc]
+                    ia = [p0x+mag, p0y],
+                    ib = [p0x-mag/2, p0y + (mag * Math.sqrt(3)/ 2)],
+                    ic = [p0x-mag/2, p0y - (mag * Math.sqrt(3)/ 2)],
+                    po = [p0x,p0y],
+                    psai = [ia],
+                    psbi = [ib],
+                    psci = [ic];
+                function move(p2) {
+                var t = pointLineSegmentParameter(p2, p0, p1),
+                    x10 = p1[0] - p0[0],
+                    y10 = p1[1] - p0[1],
+                    p3 = [p0[0] + t * x10, p0[1] + t * y10],
+                    abs = Math.abs(p3[0],p3[1])-40; 
+                    var aux = ((abs/x10)*numsample);
+                    var auw2=0, aux3=0, aux4=0; 
+                        projection.attr("d", "M" + [p2[0], 3*hWaveform ] + "L" + p3).attr("id", "line_projection").
+                        classed("intersects", ((abs/x10*numsample) > 0 && (abs/x10*numsample)< numsample));
+                        if (aux < 95 && aux >0) {var newNumberX4 = -i_mul * 17.67/(17.67+100)*Math.cos(aux/5); var newNumberY4 = i_mul * 17.67 * Math.sin((aux/5)+174*Math.PI/180)/(17.67+100) ;} 
+                        if (aux < numsample && aux >95) {var newNumberX4 = -i_mul * 17.67/(17.67+100)*Math.cos(aux/5); var newNumberY4 = i_mul * 17.67 * Math.sin((aux/5)+174*Math.PI/180)/(17.67) + i_mul * Math.sin(((aux-94)/5)+Math.PI/2)-i_mul* Math.sin(Math.PI/2) * Math.exp(-(aux-94)/50) ;}
+
+                        if (aux < 95 && aux >0) {var newNumberX5 = -i_mul * 17.67/(17.67+100)*Math.cos(aux/5-(2*Math.PI/3)); var newNumberY5 = i_mul * 17.67 * Math.sin((aux/5)+174*Math.PI/180-(2*Math.PI/3))/(17.67+100) ;} 
+                        if (aux < numsample && aux >95) {var newNumberX5 = -i_mul * 17.67/(17.67+100)*Math.cos(aux/5-(2*Math.PI/3)); var newNumberY5 = i_mul * 17.67 * Math.sin((aux/5)+174*Math.PI/180-(2*Math.PI/3))/(17.67) + i_mul * Math.sin(((aux-94)/5)+Math.PI/2-(2*Math.PI/3))-i_mul* Math.sin(Math.PI/2-(2*Math.PI/3)) * Math.exp(-(aux-94)/50) ;}
+
+                        if (aux < 95 && aux >0) {var newNumberX6 = -i_mul * 17.67/(17.67+100)*Math.cos(aux/5+(2*Math.PI/3)); var newNumberY6 = i_mul * 17.67 * Math.sin((aux/5)+174*Math.PI/180+(2*Math.PI/3))/(17.67+100) ;} 
+                        if (aux < numsample && aux >95) {var newNumberX6 = -i_mul * 17.67/(17.67+100)*Math.cos(aux/5+(2*Math.PI/3)); var newNumberY6 = i_mul * 17.67 * Math.sin((aux/5)+174*Math.PI/180+(2*Math.PI/3))/(17.67) + i_mul * Math.sin(((aux-94)/5)+Math.PI/2+(2*Math.PI/3))-i_mul* Math.sin(Math.PI/2+(2*Math.PI/3)) * Math.exp(-(aux-94)/50) ;}
+
+                        if (aux < numsample && aux >0) {var newNumberX = -i_mul * 17.67*Math.cos(aux/5); var newNumberY = i_mul * 17.67 * Math.sin((aux/5)+174*Math.PI/180);}
+                        if (aux < numsample && aux >0) {var newNumberX2 = -i_mul * 17.67*Math.cos(aux/5-(2*Math.PI/3)); var newNumberY2 = i_mul * 17.67 * Math.sin((aux/5)+174*Math.PI/180-(2*Math.PI/3));}
+                        if (aux < numsample && aux >0) {var newNumberX3 = -i_mul * 17.67*Math.cos(aux/5+(2*Math.PI/3)); var newNumberY3 = i_mul * 17.67 * Math.sin((aux/5)+174*Math.PI/180+(2*Math.PI/3));}
+
+                        va = [p0x+newNumberY, p0y+newNumberX];psa=[va];
+                        vb = [p0x+newNumberY2, p0y+newNumberX2];psb=[vb];
+                        vc = [p0x+newNumberY3, p0y+newNumberX3];psc=[vc];
+                        ia = [p0x+newNumberY4*MAX_yScaleRight/MAX_yScale, p0y+newNumberX4*MAX_yScaleRight/MAX_yScale];psai=[ia];
+                        ib = [p0x+newNumberY5*MAX_yScaleRight/MAX_yScale, p0y+newNumberX5*MAX_yScaleRight/MAX_yScale];psbi=[ib];
+                        ic = [p0x+newNumberY6*MAX_yScaleRight/MAX_yScale, p0y+newNumberX6*MAX_yScaleRight/MAX_yScale];psci=[ic];
+
+                //----------------------------------------------------		
+                //-------------- UPDATE ------------------------------		
+                //----------------------------------------------------		
+                        
+                        update();
+                }
+
+                function pointLineSegmentParameter(p2, p0, p1) {
+                        var	x10 = p1[0] - p0[0], 
+                            y10 = p1[1] - p0[1], 
+                            x20 = p2[0] - p0[0], 
+                            y20 = p2[1] - p0[1];
+
+                        return (x20 * x10 + y20 * y10) / (x10 * x10 + y10 * y10);
+                        }
+                    
+
+
+
+                //----------------------------------------------------		
+                //-------------- MARKERS ------------------------------		
+                //----------------------------------------------------		
+
+
+                var markers = ["marka", "markb", "markc", "mark2", "mark1", "mark0"];
+
+                markers.forEach(function(marker) {
+                svgA.append("svgA:defs").selectAll("marker")
+                    .data(["arrow"])
+                    .enter().append("svgA:marker")
+                    .attr("id", marker)
+                    .attr("viewBox", "0 -2.5 5 5")
+                    .attr("refX", 5)
+                    .attr("refY", 0)
+                    .attr("markerWidth", 4)
+                    .attr("markerHeight", 5)
+                    .attr("orient", "auto")
+                    .append("svgA:path")
+                    .attr("d", "M0,-2.5L5,0L0,2.5,z");
+                });
+                
+
+                //----------------------------------------------------		
+                //-------------- CALCULATE VECTORS ------------------------------		
+                //----------------------------------------------------		
+
+
+                var update = function() {
+                
+                    var	veca = [va[0]-p0x, va[1]-p0y],
+                        vecb = [vb[0]-p0x, vb[1]-p0y],
+                        vecc = [vc[0]-p0x, vc[1]-p0y]
+                        vecai = [ia[0]-p0x, ia[1]-p0y],
+                        vecbi = [ib[0]-p0x, ib[1]-p0y],
+                        vecci = [ic[0]-p0x, ic[1]-p0y];
+
+                    var ampa = dist(va),
+                        ampb = dist(vb),
+                        ampc = dist(vc),
+                        anglea = angle (veca),
+                        angleb = angle(vecb),
+                        anglec = angle(vecc)
+                        ampai = dist(ia),
+                        ampbi = dist(ib),
+                        ampci = dist(ic),
+                        angleai = angle (vecai),
+                        anglebi = angle(vecbi),
+                        angleci = angle(vecci);
+                        
+                    var va2 = [(veca[0]- (vecb[0]+vecc[0])/2 - (Math.sqrt(3)/ 2)*(vecb[1]-vecc[1]))/3, (veca[1]- ((vecb[1]+vecc[1])/2) + (Math.sqrt(3)/ 2)*(vecb[0]-vecc[0]))/3],
+                        vb2 = [(-va2[0]+va2[1]* Math.sqrt(3))/2,(-va2[1]-va2[0]* Math.sqrt(3))/2 ],
+                        vc2 = [(-va2[0]-va2[1]* Math.sqrt(3))/2,(-va2[1]+va2[0]* Math.sqrt(3))/2],
+                        po = [p0x,p0y],
+                        va2bis=[va2[0]+p0x/2,va2[1]+p0y/2],
+                        vb2bis=[vb2[0]+p0x/2,vb2[1]+p0y/2],
+                        vc2bis=[vc2[0]+p0x/2,vc2[1]+p0y/2],
+                        ps2bis=[va2, vb2, vc2], 
+                        va2= [va2[0]+p0x,va2[1]+p0y],
+                        vb2= [vb2[0]+p0x,vb2[1]+p0y],
+                        vc2= [vc2[0]+p0x,vc2[1]+p0y],
+                        ps2 = [va2, vb2, vc2]
+                        ia2 = [(vecai[0]- (vecbi[0]+vecci[0])/2 - (Math.sqrt(3)/ 2)*(vecbi[1]-vecci[1]))/3, (vecai[1]- ((vecbi[1]+vecci[1])/2) + (Math.sqrt(3)/ 2)*(vecbi[0]-vecci[0]))/3],
+                        ib2 = [(-ia2[0]+ia2[1]* Math.sqrt(3))/2,(-ia2[1]-ia2[0]* Math.sqrt(3))/2 ],
+                        ic2 = [(-ia2[0]-ia2[1]* Math.sqrt(3))/2,(-ia2[1]+ia2[0]* Math.sqrt(3))/2],
+                        po = [p0x,p0y],
+                        ia2bis=[ia2[0]+p0x/2,ia2[1]+p0y/2],
+                        ib2bis=[ib2[0]+p0x/2,ib2[1]+p0y/2],
+                        ic2bis=[ic2[0]+p0x/2,ic2[1]+p0y/2],
+                        ps2bisi=[ia2, ib2, ic2], 
+                        ia2= [ia2[0]+p0x,ia2[1]+p0y],
+                        ib2= [ib2[0]+p0x,ib2[1]+p0y],
+                        ic2= [ic2[0]+p0x,ic2[1]+p0y],
+                        ps2i = [ia2, ib2, ic2];      
+                            
+                        data = [ [po[0], po[1]],[po[0], po[1]],[po[0], po[1]] ];
+                        data3 = [ [0, 0],[0, 0],[0, 0] ];
+
+                    var va1 = [((veca[0]- (vecb[0]+vecc[0])/2 + (Math.sqrt(3)/ 2)*(vecb[1]-vecc[1]))/3),( (veca[1]- (vecb[1]+vecc[1])/2 - Math.sqrt(3)/ 2*(vecb[0]-vecc[0]))/3)],
+                    vb1 = [(-va1[0]-(va1[1]* Math.sqrt(3)))/2,(-va1[1]+va1[0]* Math.sqrt(3))/2 ],
+                    vc1 = [(-va1[0]+va1[1]* Math.sqrt(3))/2,(-va1[1]-va1[0]* Math.sqrt(3))/2],
+                    po = [p0x,p0y],
+                    va1bis=[va1[0],va1[1]],
+                    vb1bis=[vb1[0],vb1[1]],
+                    vc1bis=[vc1[0],vc1[1]],
+                    ps1bis=[va1, vb1, vc1],      
+                    
+                    va1= [va1[0]+va2[0],va1[1]+va2[1]],
+                    vb1= [vb1[0]+vb2[0],vb1[1]+vb2[1]],
+                    vc1= [vc1[0]+vc2[0],vc1[1]+vc2[1]],
+                    ps1 = [va1, vb1, vc1],
+                    ia1 = [((vecai[0]- (vecbi[0]+vecci[0])/2 + (Math.sqrt(3)/ 2)*(vecbi[1]-vecci[1]))/3),( (vecai[1]- (vecbi[1]+vecci[1])/2 - Math.sqrt(3)/ 2*(vecbi[0]-vecci[0]))/3)],
+                    ib1 = [(-ia1[0]-(ia1[1]* Math.sqrt(3)))/2,(-ia1[1]+ia1[0]* Math.sqrt(3))/2 ],
+                    ic1 = [(-ia1[0]+ia1[1]* Math.sqrt(3))/2,(-ia1[1]-ia1[0]* Math.sqrt(3))/2],
+                    po = [p0x,p0y],
+                    ia1bis=[ia1[0],ia1[1]],
+                    ib1bis=[ib1[0],ib1[1]],
+                    ic1bis=[ic1[0],ic1[1]],
+                    ps1bisi=[ia1, ib1, ic1],      
+                    
+                    ia1= [ia1[0]+ia2[0],ia1[1]+ia2[1]],
+                    ib1= [ib1[0]+ib2[0],ib1[1]+ib2[1]],
+                    ic1= [ic1[0]+ic2[0],ic1[1]+ic2[1]],
+                    ps1i = [ia1, ib1, ic1];   
+                    data1 = [[va2[0] , va2[1]],[vb2[0] , vb2[1] ],[vc2[0] , vc2[1] ]];
+                    data1i = [[ia2[0] , ia2[1]],[ib2[0] , ib2[1] ],[ic2[0] , ic2[1] ]];	
+                
+                
+                var va0 = [(veca[0]+ vecb[0]+vecc[0])/3, (veca[1]+ vecb[1]+vecc[1])/3],
+                    vb0 = [(veca[0]+ vecb[0]+vecc[0])/3,(veca[1]+ vecb[1]+vecc[1])/3 ],
+                    vc0 = [(veca[0]+ vecb[0]+vecc[0])/3,(veca[1]+ vecb[1]+vecc[1])/3],
+                    po = [p0x,p0y],               
+                    ps0bis=[va0, vb0, vc0],                 
+                    va0= [va0[0]+va1bis[0]+va2[0],va0[1]+va1bis[1]+va2[1]],
+                    vb0= [vb0[0]+vb1bis[0]+vb2[0],vb0[1]+vb1bis[1]+vb2[1]],
+                    vc0= [vc0[0]+vc1bis[0]+vc2[0],vc0[1]+vc1bis[1]+vc2[1]],
+                    ps0 = [va0, vb0, vc0]
+                    ia0 = [(vecai[0]+ vecbi[0]+vecci[0])/3, (vecai[1]+ vecbi[1]+vecci[1])/3],
+                    ib0 = [(vecai[0]+ vecbi[0]+vecci[0])/3,(vecai[1]+ vecbi[1]+vecci[1])/3 ],
+                    ic0 = [(vecai[0]+ vecbi[0]+vecci[0])/3,(vecai[1]+ vecbi[1]+vecci[1])/3],
+                    po = [p0x,p0y],               
+                    ps0bisi=[va0, vb0, vc0],                 
+                    ia0= [ia0[0]+ia1bis[0]+ia2[0],ia0[1]+ia1bis[1]+ia2[1]],
+                    ib0= [ib0[0]+ib1bis[0]+ib2[0],ib0[1]+ib1bis[1]+ib2[1]],
+                    ic0= [ic0[0]+ic1bis[0]+ic2[0],ic0[1]+ic1bis[1]+ic2[1]],
+                    ps0i = [ia0, ib0, ic0];  
+
+                    data2 = [[va1bis[0]+va2[0] , va1bis[1]+va2[1]],[vb1bis[0]+vb2[0], vb1bis[1]+vb2[1] ],[vc1bis[0]+vc2[0] , vc1bis[1]+vc2[1] ]];	
+                    data2i = [[ia1bis[0]+ia2[0] , ia1bis[1]+ia2[1]],[ib1bis[0]+ib2[0], ib1bis[1]+ib2[1] ],[ic1bis[0]+ic2[0] , ic1bis[1]+ic2[1] ]];
+
+
+                //----------------------------------------------------		
+                //-------------- CREATE VECTORS ------------------------------		
+                //----------------------------------------------------		
+
+
+                //---------- VECTOR A ---------------------
+                    
+                    var vectora = svgA.selectAll("polyline.vectora")
+                        .data(psa);
+
+                    vectora.enter().append("polyline")
+                        .attr("class", "vectora")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        });
+
+                    vectora
+                    .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        });
+                //------------------Marker A--------
+
+                var vectora = svgA.selectAll("polyline.vectora")
+                        .data(psa);
+                    vectora.enter().append("polyline")
+                        .attr("class", "vectora")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        })
+                        .append("marker")
+                        .attr("marker-end", "url(#marka)")
+                        ;
+
+                    vectora
+                    .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                
+                        })
+                        .attr("marker-end", "url(#marka)")
+                ;  
+                //----------------------------------------
+
+                //------------------Text A--------
+
+                var texta = svgA.selectAll("text.texta")
+                                        .data(psa); 
+                                texta.enter()
+                                        .append("text")
+                                        .attr("class", "texta")
+                                        .attr("x", function(d, i) {return (d.x);})
+                                        .attr("y", function (d,i) {return (d.y);})
+                                .text( "Va = " + veca[0].toFixed(0) + " +j " +veca[1].toFixed(0));
+
+                //Add SVG Text Element Attributes
+                texta
+                                .attr("x", function (d,i) {return (d.x);})
+                                .attr("y", function (d,i) {return (d.y);})
+                                .text("Va = " + veca[0].toFixed(0) + " +j " +veca[1].toFixed(0) )
+                                .attr("font-family", "sans-serif")
+                                .attr("font-size", "10px")
+                                .attr("transform", "translate(" 
+                                + (va[0]-(20/Math.cos(((ampa/100)-1)*(Math.PI/3.8)))*Math.cos(((Math.PI/2)-(((ampa/100)-1)*(Math.PI/3.8)))-((-anglea*Math.PI)/180)) ) + "," 
+                                + (va[1]-(20/Math.cos(((ampa/100)-1)*(Math.PI/3.8)))*Math.sin(((Math.PI/2)-(((ampa/100)-1)*(Math.PI/3.8)))-((-anglea*Math.PI)/180)) )  + ")")
+                                .attr("fill", "#DC143C");
+
+                //------------------VECTOR B----------------------
+
+                    var vectorb = svgA.selectAll("polyline.vectorb")
+                        .data(psb);
+                        vectorb.enter().append("polyline")
+                        .attr("class", "vectorb")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        });
+                        
+                        vectorb
+                    .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        });
+
+                //-----------------------Marker B---
+
+                var vectorb = svgA.selectAll("polyline.vectorb")
+                        .data(psb);
+                    vectorb.enter().append("polyline")
+                        .attr("class", "vectorb")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        })
+                        .append("marker")
+                        .attr("marker-end", "url(#markb)")
+                        ;
+
+                    vectorb
+                    .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                
+                        })
+                        .attr("marker-end", "url(#markb)")
+                ;  
+                //----------------------------------------
+
+                //------------------Text B--------
+
+
+                var textb = svgA.selectAll("text.textb")
+                                        .data(psb);
+                    
+                                textb.enter()
+                                        .append("text")
+                                        .attr("class", "textb")
+                                        .attr("x", function(d, i) {return (d.x);})
+                                        .attr("y", function (d,i) {return (d.y);})
+                                .text( "Vb = " + vecb[0].toFixed(0) + " +j " +vecb[1].toFixed(0));
+                
+                //Add SVG Text Element Attributes
+                textb
+                                .attr("x", function (d,i) {return (d.x);})
+                                .attr("y", function (d,i) {return (d.y);})
+                                .text("Vb = " + vecb[0].toFixed(0) + " +j " +vecb[1].toFixed(0) )
+                                .attr("font-family", "sans-serif")
+                                .attr("font-size", "10px")
+                                .attr("transform", "translate(" 
+                                + (vb[0]-(20/Math.cos(((ampb/100)-1)*(Math.PI/3.8)))*Math.cos(((Math.PI/2)-(((ampb/100)-1)*(Math.PI/3.8)))-((-angleb*Math.PI)/180)) ) + "," 
+                                + (vb[1]-(20/Math.cos(((ampb/100)-1)*(Math.PI/3.8)))*Math.sin(((Math.PI/2)-(((ampb/100)-1)*(Math.PI/3.8)))-((-angleb*Math.PI)/180)) )  + ")")
+                                .attr("fill", "#e2de50");
+                    
+                //---------------VECTOR C -------------------------
+                    var vectorc = svgA.selectAll("polyline.vectorc")
+                        .data(psc);
+                        vectorc.enter().append("polyline")
+                        .attr("class", "vectorc")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        });
+
+                        vectorc
+                    .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        });        
+
+                //--------------------Marker C------
+
+                var vectorc = svgA.selectAll("polyline.vectorc")
+                        .data(psc);
+                    vectorc.enter().append("polyline")
+                        .attr("class", "vectorc")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        })
+                        .append("marker")
+                        .attr("marker-end", "url(#markc)")
+                        ;
+
+                    vectorc
+                    .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                
+                        })
+                        .attr("marker-end", "url(#markc)")
+                ;  
+                //----------------------------------------
+
+                //------------------Text C--------
+
+                var textc = svgA.selectAll("text.textc")
+                                        .data(psc);
+                        
+                                textc.enter()
+                                        .append("text")
+                                        .attr("class","textc")
+                                        .attr("x", function(d, i) {return (d.x);})
+                                        .attr("y", function (d,i) {return (d.y);})
+                                .text( "Vc = " + vecc[0].toFixed(0) + " +j " +vecc[1].toFixed(0));
+
+                textc
+                                .attr("x", function (d,i) {return (d.x);})
+                                .attr("y", function (d,i) {return (d.y);})
+                                .text("Vc = " + vecc[0].toFixed(0) + " +j " +vecc[1].toFixed(0) )
+                                .attr("font-family", "sans-serif")
+                                .attr("font-size", "10px")
+                                .attr("transform", "translate(" 
+                                + (vc[0]-(20/Math.cos(((ampc/100)-1)*(Math.PI/3.8)))*Math.cos(((Math.PI/2)-(((ampc/100)-1)*(Math.PI/3.8)))-((-anglec*Math.PI)/180)) ) + "," 
+                                + (vc[1]-(20/Math.cos(((ampc/100)-1)*(Math.PI/3.8)))*Math.sin(((Math.PI/2)-(((ampc/100)-1)*(Math.PI/3.8)))-((-anglec*Math.PI)/180)) )  + ")")
+                                .attr("fill", "blue")
+                                .attr("background-color","white");
+
+                //---------------VECTOR 2-------------------------
+
+                    var vector2 = svgA.selectAll("polyline.vector2")
+                        .data(ps2);
+                    vector2.enter().append("polyline")
+                        .attr("class", "vector2")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                    });
+                        
+                    vector2
+                    .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                    });
+
+
+                //--------------------------
+
+                var vector2 = svgA.selectAll("polyline.vector2")
+                        .data(ps2);
+                    vector2.enter().append("polyline")
+                        .attr("class", "vector2")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        })
+                        .append("marker")
+                        .attr("marker-end", "url(#mark2)")
+                        ;
+
+                    vector2
+                    .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                
+                        })
+                        .attr("marker-end", "url(#mark2)")
+                ;  
+
+                //------------VECTOR 1----------------------------    
+                    var vector1 = svgA.selectAll("polyline.vector1")
+                        .data(ps1);
+                    vector1.enter().append("polyline")
+                        .attr("class", "vector1")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i ) % 3],d]);
+                    });
+                        
+                    vector1
+                    .attr("points", function(d, i) {
+                        return polyline([data1[(i ) % 3],d]);
+                    });
+
+                //--------------------------
+
+                var vector1 = svgA.selectAll("polyline.vector1")
+                        .data(ps1);
+                    vector1.enter().append("polyline")
+                        .attr("class", "vector1")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i ) % 3],d]);
+                        })
+                        .append("marker")
+                        .attr("marker-end", "url(#mark1)")
+                        ;
+
+                    vector1
+                    .attr("points", function(d, i) {
+                        return polyline([data1[(i ) % 3],d]);
+                
+                        })
+                        .attr("marker-end", "url(#mark1)")
+                ;  
+                //----------------VECTOR 0------------------------
+
+                    var vector0 = svgA.selectAll("polyline.vector0")
+                        .data(ps0);
+                    vector0.enter().append("polyline")
+                        .attr("class", "vector0")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i ) % 3],d]);
+                    });
+                        
+                    vector0
+                    .attr("points", function(d, i) {
+                        return polyline([data2[(i ) % 3],d]);
+                    });
+                    
+                //--------------------------
+
+                var vector0 = svgA.selectAll("polyline.vector0")
+                        .data(ps0);
+                    vector0.enter().append("polyline")
+                        .attr("class", "vector0")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i ) % 3],d]);
+                        })
+                        .append("marker")
+                        .attr("marker-end", "url(#mark0)")
+                        ;
+
+                    vector0
+                    .attr("points", function(d, i) {
+                        return polyline([data2[(i ) % 3],d]);
+                
+                        })
+                        .attr("marker-end", "url(#mark0)")
+                ;  
+                //--------------------I vectors ------------
+
+                    var vectorai = svgA.selectAll("polyline.vectorai")
+                        .data(psai);
+
+                    vectorai.enter().append("polyline")
+                        .attr("class", "vectorai")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        });
+
+                    vectorai
+                    .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        });
+                //------------------Marker A i--------
+
+                var vectorai = svgA.selectAll("polyline.vectorai")
+                        .data(psai);
+                    vectorai.enter().append("polyline")
+                        .attr("class", "vectorai")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        })
+                        .append("marker")
+                        .attr("marker-end", "url(#marka)")
+                        ;
+
+                    vectorai
+                    .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                
+                        })
+                        .attr("marker-end", "url(#marka)")
+                ;  
+                //----------------------------------------
+
+                //------------------Text A i--------
+
+                var textai = svgA.selectAll("text.textai")
+                                        .data(psai); 
+                                textai.enter()
+                                        .append("text")
+                                        .attr("class", "textai")
+                                        .attr("x", function(d, i) {return (d.x);})
+                                        .attr("y", function (d,i) {return (d.y);})
+
+                //Add SVG Text Element Attributes
+                textai
+                                .attr("x", function (d,i) {return (d.x);})
+                                .attr("y", function (d,i) {return (d.y);})
+                                .text( "Ia = " + (vecai[0]*MAX_yScale/MAX_yScaleRight).toFixed(0) + " +j " +(vecai[1]*MAX_yScale/MAX_yScaleRight).toFixed(0))
+                                .attr("font-family", "sans-serif")
+                                .attr("font-size", "10px")
+                                .attr("transform", "translate(" 
+                                + (ia[0]-(20/Math.cos(((ampai/100)-1)*(Math.PI/3.8)))*Math.cos(((Math.PI/2)-(((ampai/100)-1)*(Math.PI/3.8)))-((-angleai*Math.PI)/180)) ) + "," 
+                                + (ia[1]-(20/Math.cos(((ampai/100)-1)*(Math.PI/3.8)))*Math.sin(((Math.PI/2)-(((ampai/100)-1)*(Math.PI/3.8)))-((-angleai*Math.PI)/180)) )  + ")")
+                                .attr("fill", "#DC143C");
+
+                //----------------------------------------
+
+                    var vectorbi = svgA.selectAll("polyline.vectorbi")
+                        .data(psbi);
+                        vectorbi.enter().append("polyline")
+                        .attr("class", "vectorbi")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        });
+                        
+                        vectorbi
+                    .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        });
+
+                //-----------------------Marker B i---
+
+                var vectorbi = svgA.selectAll("polyline.vectorbi")
+                        .data(psbi);
+                    vectorbi.enter().append("polyline")
+                        .attr("class", "vectorbi")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        })
+                        .append("marker")
+                        .attr("marker-end", "url(#markb)")
+                        ;
+
+                    vectorbi
+                    .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                
+                        })
+                        .attr("marker-end", "url(#markb)")
+                ;  
+                //----------------------------------------
+
+                //------------------Text B i--------
+
+
+                var textbi = svgA.selectAll("text.textbi")
+                                        .data(psbi);
+                    
+                                textbi.enter()
+                                        .append("text")
+                                        .attr("class", "textbi")
+                                        .attr("x", function(d, i) {return (d.x);})
+                                        .attr("y", function (d,i) {return (d.y);})
+                
+                //Add SVG Text Element Attributes
+                textbi
+                                .attr("x", function (d,i) {return (d.x);})
+                                .attr("y", function (d,i) {return (d.y);})
+                                .text( "Ib = " + (vecbi[0]*MAX_yScale/MAX_yScaleRight).toFixed(0) + " +j " +(vecbi[1]*MAX_yScale/MAX_yScaleRight).toFixed(0))
+                                .attr("font-family", "sans-serif")
+                                .attr("font-size", "10px")
+                                .attr("transform", "translate(" 
+                                + (ib[0]-(20/Math.cos(((ampbi/100)-1)*(Math.PI/3.8)))*Math.cos(((Math.PI/2)-(((ampbi/100)-1)*(Math.PI/3.8)))-((-anglebi*Math.PI)/180)) ) + "," 
+                                + (ib[1]-(20/Math.cos(((ampbi/100)-1)*(Math.PI/3.8)))*Math.sin(((Math.PI/2)-(((ampbi/100)-1)*(Math.PI/3.8)))-((-anglebi*Math.PI)/180)) )  + ")")
+                                .attr("fill", "#e2de50");
+                    
+                //--------------------VECTOR C i--------------------
+                    var vectorci = svgA.selectAll("polyline.vectorci")
+                        .data(psci);
+                        vectorci.enter().append("polyline")
+                        .attr("class", "vectorci")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        });
+
+                        vectorci
+                    .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        });        
+
+                //--------------------Marker Ci------
+
+                var vectorci = svgA.selectAll("polyline.vectorci")
+                        .data(psci);
+                    vectorci.enter().append("polyline")
+                        .attr("class", "vectorci")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        })
+                        .append("marker")
+                        .attr("marker-end", "url(#markc)")
+                        ;
+
+                    vectorci
+                    .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                
+                        })
+                        .attr("marker-end", "url(#markc)")
+                ;  
+                //----------------------------------------
+
+                //------------------Text C i--------
+
+                var textci = svgA.selectAll("text.textci")
+                                        .data(psci);
+                        
+                                textci.enter()
+                                        .append("text")
+                                        .attr("class","textci")
+                                        .attr("x", function(d, i) {return (d.x);})
+                                        .attr("y", function (d,i) {return (d.y);})
+
+                textci
+                                .attr("x", function (d,i) {return (d.x);})
+                                .attr("y", function (d,i) {return (d.y);})
+                                .text( "Ic = " + (vecci[0]*MAX_yScale/MAX_yScaleRight).toFixed(0) + " +j " +(vecci[1]*MAX_yScale/MAX_yScaleRight).toFixed(0))
+                                .attr("font-family", "sans-serif")
+                                .attr("font-size", "10px")
+                                .attr("transform", "translate(" 
+                                + (ic[0]-(20/Math.cos(((ampci/100)-1)*(Math.PI/3.8)))*Math.cos(((Math.PI/2)-(((ampci/100)-1)*(Math.PI/3.8)))-((-angleci*Math.PI)/180)) ) + "," 
+                                + (ic[1]-(20/Math.cos(((ampci/100)-1)*(Math.PI/3.8)))*Math.sin(((Math.PI/2)-(((ampci/100)-1)*(Math.PI/3.8)))-((-angleci*Math.PI)/180)) )  + ")")
+                                .attr("fill", "blue")
+                                .attr("background-color","white");
+
+                //----------------------------------------
+
+                    var vector2i = svgA.selectAll("polyline.vector2")
+                        .data(ps2i);
+                    vector2i.enter().append("polyline")
+                        .attr("class", "vector2")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                    });
+                        
+                    vector2i
+                    .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                    });
+
+
+                //--------------------------
+
+                var vector2i = svgA.selectAll("polyline.vector2")
+                        .data(ps2i);
+                    vector2i.enter().append("polyline")
+                        .attr("class", "vector2")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                        })
+                        .append("marker")
+                        .attr("marker-end", "url(#mark2)")
+                        ;
+
+                    vector2i
+                    .attr("points", function(d, i) {
+                        return polyline([data[(i + 1) % 3],d]);
+                
+                        })
+                        .attr("marker-end", "url(#mark2)")
+                ;  
+
+                //----------------------------------------    
+                    var vector1i = svgA.selectAll("polyline.vector1")
+                        .data(ps1i);
+                    vector1i.enter().append("polyline")
+                        .attr("class", "vector1")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i ) % 3],d]);
+                    });
+                        
+                    vector1i
+                    .attr("points", function(d, i) {
+                        return polyline([data1i[(i ) % 3],d]);
+                    });
+
+                //--------------------------
+
+                var vector1i = svgA.selectAll("polyline.vector1")
+                        .data(ps1i);
+                    vector1i.enter().append("polyline")
+                        .attr("class", "vector1")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i ) % 3],d]);
+                        })
+                        .append("marker")
+                        .attr("marker-end", "url(#mark1)")
+                        ;
+
+                    vector1i
+                    .attr("points", function(d, i) {
+                        return polyline([data1i[(i ) % 3],d]);
+                
+                        })
+                        .attr("marker-end", "url(#mark1)")
+                ;  
+                //----------------------------------------
+
+                    var vector0i = svgA.selectAll("polyline.vector0")
+                        .data(ps0i);
+                    vector0i.enter().append("polyline")
+                        .attr("class", "vector0")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i ) % 3],d]);
+                    });
+                        
+                    vector0i
+                    .attr("points", function(d, i) {
+                        return polyline([data2i[(i ) % 3],d]);
+                    });
+                    
+                //--------------------------
+
+                var vector0i = svgA.selectAll("polyline.vector0")
+                        .data(ps0i);
+                    vector0i.enter().append("polyline")
+                        .attr("class", "vector0")
+                        .attr("points", function(d, i) {
+                        return polyline([data[(i ) % 3],d]);
+                        })
+                        .append("marker")
+                        .attr("marker-end", "url(#mark0)")
+                        ;
+
+                    vector0i
+                    .attr("points", function(d, i) {
+                        return polyline([data2i[(i ) % 3],d]);
+                
+                        })
+                        .attr("marker-end", "url(#mark0)");
+                
+                };
+
+                //----------------------------------------------------		
+                //-------------- UPDATE ------------------------------		
+                //----------------------------------------------------		
+                
+                
+                update();
+
+
+                //---------------------------DDD      ----------------------------
+                //---------------------------D  DD    ----------------------------
+                //---------------------------D   DD   ----------------------------
+                //---------------------------D    DD  ----------------------------
+                //---------------------------D  DD    ----------------------------
+                //---------------------------DDD      ----------------------------
+
+
+                let topMenueButtons = d3.select("#topMenueButtons");
+                let cellblanktdButtons1 = topMenueButtons.insert("td", "td:first-child");
+                let cellblanktdButtons2 = topMenueButtons.append("td");
+                cellblanktdButtons1.attr("id", "cellblanktdButtons1").style("width","20%");
+                cellblanktdButtons2.attr("id", "cellblanktdButtons2").style("width","20%");
+                // Select all of the td elements within the topMenueButtons row
+                let tdButtonsElements = topMenueButtons.selectAll("td");
+                // Set the width style on the rest individual td element
+                tdButtonsElements.filter(":not(:first-child):not(:last-child)").style("width", "30%");
+                // Set the text-align property to center for all td elements
+                tdButtonsElements.style("text-align", "center");
+
+                // Create the table element
+                let tableSineWave = d3.select("#trig")
+                .append("table").style("width","77%")
+                .style("border-collapse", "collapse")
+                .style("padding", "0")
+                .style("margin", "0");
+
+                // Create a single row with two cells
+                let rowSineWave = tableSineWave.append("tr");
+                let cellblank1 = rowSineWave.append("td");
+                let cellSine = rowSineWave.append("td").style("overflow","hidden");
+                let cellblank2 = rowSineWave.append("td");
+
+                // Set IDs for the cells
+                cellblank1.attr("id", "cellblank1").style("width","20%");
+                cellSine.attr("id", "cellSine").style("width","58%");
+                cellblank2.attr("id", "cellblank2").style("width","20%");
+
+                let variablesForChar = d3.select("#variablesForChar");
+                let cellblankChar1 = variablesForChar.insert("td", "td:first-child");
+                let cellblankChar2 = variablesForChar.append("td");
+                cellblankChar1.attr("id", "cellblankChar1").style("width","20%");
+                cellblankChar2.attr("id", "cellblankChar2").style("width","20%");
+                // Select all of the td elements within the variablesForChar row
+                let tdElements = variablesForChar.selectAll("td");
+                // Set the width style on the rest individual td element
+                tdElements.filter(":not(:first-child):not(:last-child)").style("width", "15%");
+                // Set the text-align property to center for all td elements
+                tdElements.style("text-align", "center");
+
+
+                // Create a new table element
+                let tableChar = d3.select("#ForChar")
+                .append("table").style("width","77%").style("height",450+"px")
+                .style("border-collapse", "collapse")
+                .style("padding", "0")
+                .style("margin", "0");
+
+                // Create a single row with two cells
+                let rowChar = tableChar.append("tr")
+                let cellblankrowChar1 = rowChar.append("td");
+                let cellChar = rowChar.append("td"); 
+                cellChar.attr("id", "cellChar").style("overflow","hidden");
+                let cellblankrowChar2 = rowChar.append("td");
+                cellblankrowChar1.attr("id", "cellblankrowChar1").style("width","20%");
+                cellChar.style("width","60%");
+                cellblankrowChar2.attr("id", "cellblankrowChar2").style("width","20%");
+
+
+
+                (function () {
+                var 
+                X1 = 'x1', X2 = 'x2', Y1 = 'y1', Y2 = 'y2'; 
+                var 
+                dataB = [], dataR = [], dataY = [], width = 650, height = 220, centerX =380, centerY =220, 
+                xmin = -1.2, 
+                xmax = 5, 
+                ymin = -height * (xmax - xmin) / width / 2, 
+                ymax = -ymin, 
+                xScale = d3.scale.linear(), 
+                yScale = d3.scale.linear(), 
+                vis_trig = d3.select("#cellSine").append('svg').style("overflow","visible"),
+                vis2_trig = d3.select("#cellChar").append('svg').attr("class", "rootChar"),
+                vis3_trig = d3.select("#fragment_animation_2").append('svg');
+                
+                xScale.domain([xmin, xmax]).range([0, width]); 
+                yScale.domain([ymin, ymax]).range([0, height]); 
+                
+                var
+                decor = vis_trig.append('g'),  
+                graph = vis_trig.append('g'),
+                graph2 = vis2_trig.append('g'), 
+                graph3 = vis3_trig.append('g'), 
+                pathB = graph.append('path'), 
+                pathR = graph.append('path'),  
+                pathY = graph.append('path'),
+                characteristic_amplitude =450,
+                characteristic_angle =0,
+                relay_angle =0,
+                characteristic = graph2.append('path'),
+                characteristicY = graph2.append('path'),
+                characteristicB = graph2.append('path'), 
+                characteristic_end = graph2.append('path'), 
+                characteristic_endY = graph2.append('path'), 
+                characteristic_endB = graph2.append('path'), 
+                recX = 500, 
+                recY = 400,
+                bR = graph.append('line'), 
+                cR = graph.append('path'), 
+                dR = graph.append('line'), 
+                bY = graph.append('line'), 
+                cY = graph.append('path'), 
+                dY = graph.append('line'), 
+                bB = graph.append('line'), 
+                cB = graph.append('path'), 
+                dB = graph.append('line'), 
+                cPolRY = graph.append('path'),  
+                cPolRYbis = graph2.append('path'), 
+                cPolRYbis_end = graph2.append('path'),
+                arcPolRYbis_end = graph2.append('path'),
+                cPolRYter = graph3.append('path'), 
+                cPolYB = graph.append('path'),
+                cPolYBbis = graph2.append('path'),
+                cPolYBbis_end = graph2.append('path'),
+                arcPolYBbis_end = graph2.append('path'),
+                cPolYBter = graph3.append('path'),
+                cPolBR = graph.append('path'),  
+                cPolBRbis = graph2.append('path'), 
+                cPolBRbis_end = graph2.append('path'),
+                arcPolBRbis_end = graph2.append('path'),
+                cPolBRter = graph3.append('path'),
+                circle = graph.append('circle'),
+                Va_Faultbis = graph2.append('path'),
+                Vb_Faultbis = graph2.append('path'),
+                Vc_Faultbis = graph2.append('path'),
+                Va_Faultter = graph3.append('path'),
+                Vb_Faultter = graph3.append('path'),
+                Vc_Faultter = graph3.append('path'),
+                dotR = graph.append('circle'),  
+                dotY = graph.append('circle'),
+                dotB = graph.append('circle'), 
+                rectVAB = graph.append("rect").attr("width", "50").attr("height", "24").attr("fill", "white"), 
+                rectVBC = graph.append("rect").attr("width", "50").attr("height", "24").attr("fill", "white"), 
+                rectVCA = graph.append("rect").attr("width", "50").attr("height", "24").attr("fill", "white"),
+                rectVA = graph.append("rect").attr("width", "30").attr("height", "18").attr("fill", "white"), 
+                rectVB = graph.append("rect").attr("width", "30").attr("height", "18").attr("fill", "white"), 
+                rectVC = graph.append("rect").attr("width", "30").attr("height", "18").attr("fill", "white"), 
+                rectVAter = graph3.append("rect").attr("width", "30").attr("height", "18").attr("fill", "white"), 
+                rectVBter = graph3.append("rect").attr("width", "30").attr("height", "18").attr("fill", "white"), 
+                rectVCter = graph3.append("rect").attr("width", "30").attr("height", "18").attr("fill", "white"),
+                rectVABbis = graph2.append("rect").attr("width", "50").attr("height", "24").attr("fill", "white"),
+                rectVBCbis = graph2.append("rect").attr("width", "50").attr("height", "24").attr("fill", "white"),  
+                rectVCAbis = graph2.append("rect").attr("width", "50").attr("height", "24").attr("fill", "white"),
+                rectVABter = graph3.append("rect").attr("width", "50").attr("height", "24").attr("fill", "white"), 
+                rectVBCter = graph3.append("rect").attr("width", "50").attr("height", "24").attr("fill", "white"), 
+                rectVCAter = graph3.append("rect").attr("width", "50").attr("height", "24").attr("fill", "white"),
+
+                rectVPol = graph2.append("rect").attr("width", "50").attr("height", "24").attr("fill", "white"), 
+                rectVPolBC = graph2.append("rect").attr("width", "50").attr("height", "24").attr("fill", "white"), 
+                rectVPolCA = graph2.append("rect").attr("width", "50").attr("height", "24").attr("fill", "white"),  
+                labelVAB = graph.append('text'),labelVBC = graph.append('text'),
+                labelVCA = graph.append('text'), labelVA = graph.append('text'),
+                labelVB = graph.append('text'),labelVC = graph.append('text'),
+                labelVABbis = graph2.append('text'),  
+                labelVBCbis = graph2.append('text'), 
+                labelVCAbis = graph2.append('text'),
+                labelVPol = graph2.append('text'),
+                labelVABter = graph3.append('text'), 
+                labelVBCter = graph3.append('text'),
+                labelVCAter = graph3.append('text'),
+                labelVPol = graph2.append('text'),
+
+                labelVPolBC = graph2.append('text'),
+                labelVPolCA = graph2.append('text'),
+                label_Ia_fault = graph2.append('text'),
+                label_Ib_fault = graph2.append('text'),
+                label_Ic_fault = graph2.append('text'),
+                labelVABter = graph3.append('text'),
+                labelVBCter = graph3.append('text'),
+                labelVCAter = graph3.append('text'), 
+                labelVAter = graph3.append('text'),
+                labelVBter = graph3.append('text'),
+                labelVCter = graph3.append('text'),
+
+                    label_Ia_fault1 = graph.append('text'),label_Ib_fault1 = graph.append('text'),label_Ic_fault1 = graph.append('text'),
+                    label_Va_fault = graph2.append('text'),label_Vb_fault = graph2.append('text'),label_Vc_fault = graph2.append('text'),
+                    arc_labelRY = graph2.append('text'),arc_labelYB = graph2.append('text'),arc_labelBR = graph2.append('text'),
+                    arc_I_V_RY = graph2.append('path'), arc_I_V_YB = graph2.append('path'), arc_I_V_BR = graph2.append('path'),
+                    arc_I_V_labelRY = graph2.append('text'), arc_I_V_labelYB = graph2.append('text'), arc_I_V_labelBR = graph2.append('text'),
+                    Trip = graph2.append('text'), 
+                    NoTrip = graph2.append('text'), 
+                    TripBC = graph2.append('text'), 
+                    NoTripBC = graph2.append('text'), 
+                    TripCA = graph2.append('text'), 
+                    NoTripCA = graph2.append('text'),
+                    Ia_Fault = graph.append('path'),
+                    Ib_Fault = graph.append('path'),
+                    Ic_Fault = graph.append('path'),
+                    Ia_Faultbis = graph2.append('path'),
+                    Ib_Faultbis = graph2.append('path'),
+                    Ic_Faultbis = graph2.append('path'),
+                    sineR = d3.svg.line(),
+                    sineB = d3.svg.line(),
+                    sineY = d3.svg.line(), 
+                
+                    time = 0, i; 
+
+                vis_trig.append("vis_trig:defs").selectAll("marker")
+                    .data(["arrow"])
+                .enter().append("vis_trig:marker")
+                    .attr("id", "markR")
+                    .attr("viewBox", "0 -2.5 5 5")
+                    .attr("refX", 5)
+                    .attr("refY", 0)
+                    .attr("markerWidth", 8)
+                    .attr("markerHeight", 12)
+                    .attr("orient", "auto")
+                    .append("vis_trig:path")
+                    .attr("d", "M0,-2.5L5,0L0,2.5,z").style("fill","red").style("stroke-width",0.1);
+
+                vis_trig.append("vis_trig:defs").selectAll("marker")
+                    .data(["arrow"])
+                .enter().append("vis_trig:marker")
+                    .attr("id", "markY")
+                    .attr("viewBox", "0 -2.5 5 5")
+                    .attr("refX", 5)
+                    .attr("refY", 0)
+                    .attr("markerWidth", 8)
+                    .attr("markerHeight", 12)
+                    .attr("orient", "auto")
+                    .append("vis_trig:path")
+                    .attr("d", "M0,-2.5L5,0L0,2.5,z").style("fill","yellow").style("stroke-width",0.1);
+
+                vis_trig.append("vis_trig:defs").selectAll("marker")
+                    .data(["arrow"])
+                .enter().append("vis_trig:marker")
+                    .attr("id", "markB")
+                    .attr("viewBox", "0 -2.5 5 5")
+                    .attr("refX", 5)
+                    .attr("refY", 0)
+                    .attr("markerWidth", 8)
+                    .attr("markerHeight", 12)
+                    .attr("orient", "auto")
+                    .append("vis_trig:path")
+                    .attr("d", "M0,-2.5L5,0L0,2.5,z").style("fill","blue").style("stroke-width",0.1); 
+
+                vis_trig.append("vis_trig:defs").selectAll("marker")
+                    .data(["arrow"])
+                .enter().append("vis_trig:marker")
+                    .attr("id", "markPol")
+                    .attr("viewBox", "0 -2.5 5 5")
+                    .attr("refX", 5)
+                    .attr("refY", 0)
+                    .attr("markerWidth", 8)
+                    .attr("markerHeight", 12)
+                    .attr("orient", "auto")
+                    .append("vis_trig:path")
+                    .attr("d", "M0,-2.5L5,0L0,2.5,z").style("fill","SteelBlue").style("stroke-width",0.1); 
+
+                vis2_trig.append("vis2_trig:defs").selectAll("marker")
+                    .data(["arrow"])
+                    .enter().append("vis2_trig:marker")
+                    .attr("id", "markRestrain")
+                    .attr("viewBox", "-5 -2.5 5 5")
+                    .attr("refX", 0)
+                    .attr("refY", 0)
+                    .attr("markerWidth", 800)
+                    .attr("markerHeight", 800)
+                    .attr("orient", "auto")
+                    .append("vis2_trig:path")
+                    .attr("d", "M0,-2.5L-5,-2.5L-5,2.5L0,2.5,z").style("fill","SteelBlue").style("fill-opacity","0.2").style("stroke-width",0.1); 
+                    
+                var rec = graph2.append('rect'), 
+                recLow = graph2.append('path'),recLabelVAB = graph.append("rect"),recLabelVABbis = graph2.append("rect");	
+                recLowform = graph2.append('form').select(".form19");
+                for (i = 0; i < 84; i++) { 
+                dataB.push(i * 10 / 84); dataR.push(i * 10 / 84); dataY.push(i * 10 / 84);  } 
+
+                vis_trig.attr('class', 'trig rootSine').attr('width',width).attr('height',height); 
+                vis2_trig.attr('id', 'cellChar').attr('width',width).attr('height',450); 
+                vis3_trig.attr('class', 'trig').attr('width',300).attr('height',220); 
+                sineR 
+                .x(function (d, i) { return xScale(d); }) 
+                .y(function (d, i) { return yScale(Math.sin(d - time + Math.PI)); }); 
+                sineB 
+                .x(function (d, i) { return xScale(d); }) 
+                .y(function (d, i) { return yScale(Math.sin(d - time + Math.PI/3)); }); 
+                sineY 
+                .x(function (d, i) { return xScale(d); }) 
+                .y(function (d, i) { return yScale(Math.sin(d - time - Math.PI/3)); }); 
+                // X-Axis 
+                decor.append('line').attr('class','axis').attr(X1, xScale(xmin)).attr(Y1, yScale(0)).attr(X2, xScale(xmax*1.3)).attr(Y2, yScale(0)); 
+                decor.append('line').attr('class','axis').attr(X1, xScale(Math.PI)).attr(Y1, yScale(0)).attr(X2, xScale(Math.PI)).attr(Y2, yScale(0) + 8); 
+                decor.append('line').attr('class','axis').attr(X1, xScale(2*Math.PI)).attr(Y1, yScale(0)).attr(X2, xScale(2*Math.PI)).attr(Y2, yScale(0) + 8); 
+                decor.append("text").text(String.fromCharCode(960)).attr("x", Math.round(xScale(Math.PI))).attr("y", (yScale(0)) + 24).attr("text-anchor","middle"); 
+                decor.append("text").text("2"+String.fromCharCode(960)).attr("x", Math.round(xScale(2 * Math.PI))).attr("y", (yScale(0)) +24).attr("text-anchor","middle"); 
+                
+                
+                // Y-Axis 
+                decor.append('line').attr('class','axis').attr(X1, xScale(0)).attr(Y1, yScale(ymin)).attr(X2, xScale(0)).attr(Y2, yScale(ymax)); 
+
+                // Circle 
+                circle.attr('cx', xScale(0)).attr('cy', yScale(0)).attr('r', xScale(1) - xScale(0)); 
+
+                // Dot
+                dotB.attr('cx', xScale(0)).attr('r', 4).style('fill', '#fff');
+                dotR.attr('cx', xScale(0)).attr('r', 4).style('fill', '#fff');
+                dotY.attr('cx', xScale(0)).attr('r', 4).style('fill', '#fff');
+
+                function draw() { 
+                ABphase=1,BCphase=0,CAphase=0,XoverR=60,Rchar=45; 
+                var 
+                x = xScale(-Math.cos(time)), Ix =  xScale(-Math.cos(time-Math.PI*XoverR/180)/2), Ixlabel =  xScale(-1.23*Math.cos(time-Math.PI*XoverR/180)/2),
+                y = yScale(Math.sin(time)), Iy = yScale(Math.sin(time-Math.PI*XoverR/180)/2),Iylabel = yScale(1.23*Math.sin(time-Math.PI*XoverR/180)/2),
+                xY = xScale(Math.cos(time + Math.PI/3)), IxY = xScale(Math.cos(time -(Math.PI*XoverR/180) + Math.PI/3)/2),IxYlabel = xScale(1.23*Math.cos(time -(Math.PI*XoverR/180) + Math.PI/3)/2),
+                yY = yScale(-Math.sin(time + Math.PI/3)), IyY = yScale(-Math.sin(time -(Math.PI*XoverR/180) + Math.PI/3)/2), IyYlabel = yScale(-1.23*Math.sin(time -(Math.PI*XoverR/180) + Math.PI/3)/2),
+                xB = xScale(Math.cos(time - Math.PI/3)), IxB = xScale(Math.cos(time -(Math.PI*XoverR/180) - Math.PI/3)/2), IxBlabel = xScale(1.23*Math.cos(time -(Math.PI*XoverR/180) - Math.PI/3)/2),
+                yB = yScale(-Math.sin(time - Math.PI/3)), IyB = yScale(-Math.sin(time -(Math.PI*XoverR/180) - Math.PI/3)/2), IyBlabel = yScale(-1.23*Math.sin(time -(Math.PI*XoverR/180) - Math.PI/3)/2) ; 
+                pathR.attr("class","red").attr('d', sineR(dataR)); 
+                pathB.attr("class","blue").attr('d', sineB(dataB)); 
+                pathY.attr("class","yellow").attr('d', sineY(dataY)); 
+
+                    d3.selectAll(".VabTrip").style("display","block");
+                    d3.selectAll(".Vab").style("display","block");
+                    d3.selectAll(".VbcTrip").style("display","none");
+                    d3.selectAll(".VcaTrip").style("display","none");
+                    d3.selectAll(".steelVab").style("display","block");
+                    d3.selectAll(".blueI").style("display","block");
+                    d3.selectAll(".redI").style("display","none");
+                    d3.selectAll(".yellowI").style("display","none");
+                    d3.selectAll(".arcYB").style("display","none");
+                    d3.selectAll(".arcBR").style("display","none");
+                    d3.selectAll(".arcRY").style("display","block");
+
+
+                    rectVA.attr("class",'Va').attr("x", ((x+xScale(0))/2)-15).attr("y", ((y+yScale(0))/2) - 15); 
+                    rectVB.attr("class",'Vb').attr("x", ((xY+xScale(0))/2)-15).attr("y", ((yY+yScale(0))/2) - 15); 
+                    rectVC.attr("class",'Vc').attr("x", ((xB+xScale(0))/2)-15).attr("y", ((yB+yScale(0))/2) - 15);   
+                    rectVAB.attr("class",'Vab').attr("x", ((x+xY)/2)-5).attr("y", ((y+yY)/2) - 20);  
+                    labelVA.text('Va').attr("class","red").attr("x",  0.5*(x+xScale(0))).attr("y",0.5*(y+yScale(0))).style("font-size","20px");
+                    labelVB.text('Vb').attr("class","yellow").attr("x", 0.5*(xY+xScale(0))).attr("y",0.5*(yY+yScale(0))).style("font-size","20px"); 
+                    labelVC.text('Vc').attr("class","blue").attr("x",  0.5*(xB+xScale(0))).attr("y",0.5*(yB+yScale(0))).style("font-size","20px");  
+                    labelVAB.text('Vab').attr("class","Vab").attr("x", (x+xY)/2).attr("y", (y+yY)/2);
+                
+
+
+                cR.attr("class","red").attr("d","m" + xScale(0) +"," + yScale(0) + "L"  + x +"," + y + "").attr("marker-end", "url(#markR)");
+                Va_Faultter.attr("class","redI").attr("d","m" + xScale(0) +"," + yScale(0) + "L"  + x +"," + y + "").attr("marker-end", "url(#markR)");
+                Ia_Fault.attr("class","redI").attr("d","m" + xScale(0) +"," + yScale(0) + "L"  + Ix +"," + Iy + "").attr("marker-end", "url(#markR)");
+                label_Ia_fault1.text('Ia').attr("class","redI").attr("x",  (Ixlabel) ).attr("y",(Iylabel)).style("font-size","20px");
+                bR.attr("class","dotted showDotted").attr(X1, xScale(0)).attr(Y1, y).attr(X2, x).attr(Y2, y); 
+                dR.attr("class","dotted showDotted").attr(X1, x).attr(Y1, yScale(0)).attr(X2, x).attr(Y2,y);  
+                cY.attr("class","yellow").attr("d","m" + xScale(0) +"," + yScale(0) + "L"  + xY +"," + yY + "").attr("marker-end", "url(#markY)"); 
+                Vb_Faultter.attr("class","yellowI").attr("d","m" + xScale(0) +"," + yScale(0) + "L"  + xY +"," + yY + "").attr("marker-end", "url(#markY)"); 
+                Ib_Fault.attr("class","yellowI").attr("d","m" + xScale(0) +"," + yScale(0) + "L"  + IxY +"," + IyY + "").attr("marker-end", "url(#markY)");
+                label_Ib_fault1.text('Ib').attr("class","yellowI").attr("x",  (IxYlabel) ).attr("y",(IyYlabel)).style("font-size","20px"); 
+                bY.attr("class","dotted").attr(X1, xScale(0)).attr(Y1, yY).attr(X2, xY).attr(Y2, yY); 
+                dY.attr("class","dotted").attr(X1, xY).attr(Y1, yScale(0)).attr(X2, xY).attr(Y2,yY);  
+                cB.attr("class","blue").attr("d","m" + xScale(0) +"," + yScale(0) + "L"  + xB +"," + yB + "").attr("marker-end", "url(#markB)"); 
+                Vc_Faultter.attr("class","blueI").attr("d","m" + xScale(0) +"," + yScale(0) + "L"  + xB +"," + yB + "").attr("marker-end", "url(#markB)"); 
+                Ic_Fault.attr("class","blueI").attr("d","m" + xScale(0) +"," + yScale(0) + "L"  + IxB +"," + IyB + "").attr("marker-end", "url(#markB)");
+                label_Ic_fault1.text('Ic').attr("class","blueI").attr("x",  (IxBlabel) ).attr("y",(IyBlabel)).style("font-size","20px"); 
+                bB.attr("class","dotted").attr(X1, xScale(0)).attr(Y1, yB).attr(X2, xB).attr(Y2, yB);
+                dB.attr("class","dotted").attr(X1, xB).attr(Y1, yScale(0)).attr(X2, xB).attr(Y2,yB);  
+                cPolRY.attr("class","steelVab").attr("d","m" + xY +"," + yY + "L"  + x +"," + y + "").attr("marker-end", "url(#markPol)"); 
+                cPolRYter.attr("class","steelVab").attr("d","m" + xY +"," + yY + "L"  + x +"," + y + "").attr("marker-end", "url(#markPol)");  
+                cPolYB.attr("class","steelVbc").attr("d","m" + xB +"," + yB + "L"  + xY +"," + yY + "").attr("marker-end", "url(#markPol)");  
+                cPolYBter.attr("class","steelVbc").attr("d","m" + xB +"," + yB + "L"  + xY +"," + yY + "").attr("marker-end", "url(#markPol)");   
+                cPolBR.attr("class","steelVca").attr("d","m" + x +"," + y + "L"  + xB +"," + yB + "").attr("marker-end", "url(#markPol)"); 
+                cPolBRter.attr("class","steelVca").attr("d","m" + x +"," + y + "L"  + xB +"," + yB + "").attr("marker-end", "url(#markPol)");   
+
+                characteristic_angle = Math.atan2(-(y-yY),-(x-xY))+Math.PI/2;
+                characteristic_angleY = Math.atan2(-(yY-yB),-(xY-xB))+Math.PI/2;
+                characteristic_angleB = Math.atan2(-(yB-y),-(xB-x))+Math.PI/2;
+                d3.selectAll(".dotted").style("display","none");
+                d3.selectAll(".dotted.red").style("display","block");
+                characteristic_end.attr("class","steelVab").attr("d","m" + (centerX-characteristic_amplitude * Math.cos(characteristic_angle+relay_angle)) +"," + (centerY-characteristic_amplitude * Math.sin(characteristic_angle+relay_angle)) + "L"  + (centerX+characteristic_amplitude * Math.cos(characteristic_angle+relay_angle)) +"," + (centerY+characteristic_amplitude * Math.sin(characteristic_angle+relay_angle)) + "");  
+                characteristic.attr("class","steelVab").attr("d","m" + (centerX-characteristic_amplitude * Math.cos(characteristic_angle)) +"," + (centerY-characteristic_amplitude * Math.sin(characteristic_angle)) + "L"  + (centerX+characteristic_amplitude * Math.cos(characteristic_angle)) +"," + (centerY+characteristic_amplitude * Math.sin(characteristic_angle)) + "").attr("stroke-dasharray","3").style("stroke-width","1"); 
+
+                rec.attr("fill","none").attr("stroke","SteelBlue").attr("x",100).attr("y",25).attr("width",recX).attr("height",recY);
+                recLow.attr("fill","white").attr("stroke","none").attr("d", "M0," + (0) +  "L"  + (100) +"," + (0) +  "L"  + (100) +"," + (25+recY)  +  
+                                                                        "L"  + (100+recX) +"," + (25+recY) +"L"  + (100+recX) +"," + (25) + "L"  + (100) +"," + (25) +
+                                                                        "L"  + (100) +"," + (0) + "L"  + (100+recX+100) +"," + (0) +
+                                                                        "L"  + (100+recX+100) +"," + (25+recY+180) + "L"  + (0) +"," + (25+recY+180) + 
+                                                                        "L"  + (0) +"," + (0) + "") ; 
+                // characteristic.attr("class","steel").attr("d","m" + (400) +"," + (500) + "L"  + (400+characteristic_amplitude * Math.cos(characteristic_angle)) +"," + (500+characteristic_amplitude * Math.sin(characteristic_angle)) + "").attr("marker-end", "url(#markPol)"); 
+                dotR.attr('cy', y);  dotY.attr('cy', yY);  dotB.attr('cy', yB); 
+                
+                arcPolRYbis_end.attr("class","arcRY").attr("d","M" + (centerX+0.75*(x-xY)) +"," + (centerY+0.75*(y-yY)) + "A" + Math.sqrt((x-xY)*(x-xY)+(y-yY)*(y-yY)) + "," + Math.sqrt((x-xY)*(x-xY)+(y-yY)*(y-yY)) + " 0 0 0," + (centerX+0.75*Math.sqrt((x-xY)*(x-xY)+(y-yY)*(y-yY))*Math.cos(characteristic_angle+relay_angle+(Math.PI/2))) + "," + (centerY+0.75*Math.sqrt((x-xY)*(x-xY)+(y-yY)*(y-yY))*Math.sin(characteristic_angle+relay_angle+(Math.PI/2)))).attr("marker-end", "url(#markPol)");
+                arc_labelRY.text("+" + Rchar+" °").attr("class","arcRY").style({"stroke": "SteelBlue","fill": "SteelBlue","font-size": "24px"}).attr("x", (centerX+0.9*Math.sqrt((x-xY)*(x-xY)+(y-yY)*(y-yY))*Math.cos(characteristic_angle+relay_angle/2+(Math.PI/2)))).attr("y",centerY+0.9*Math.sqrt((x-xY)*(x-xY)+(y-yY)*(y-yY))*Math.sin(characteristic_angle+relay_angle/2+(Math.PI/2))).style("font-size","16px").style("font-weight",300);
+                cPolRYbis.attr("class","steelVab").attr("d","m" + centerX +"," + centerY + "L"  + (centerX+x-xY) +"," + (centerY+y-yY) + "").attr("marker-end", "url(#markPol)");  
+                cPolRYbis_end.attr("class","steelVab").attr("d","m" + centerX +"," + centerY + "L"  + (centerX+Math.sqrt((x-xY)*(x-xY)+(y-yY)*(y-yY))*Math.cos(characteristic_angle+relay_angle+(Math.PI/2))) +"," + (centerY+Math.sqrt((x-xY)*(x-xY)+(y-yY)*(y-yY))*Math.sin(characteristic_angle+relay_angle+(Math.PI/2))) + "").attr("marker-end", "url(#markPol)").attr("marker-start", "url(#markRestrain)");  
+                Ic_Faultbis.attr("class","blueI").attr("d","m" + centerX +"," + centerY + "L"  + (centerX+IxB-xScale(0)) +"," + (centerY+IyB-yScale(0)) + "").attr("marker-end", "url(#markB)");
+                Vc_Faultbis.attr("class","blueI").attr("d","m" + centerX +"," + centerY + "L"  + (centerX+xB-xScale(0)) +"," + (centerY+yB-yScale(0)) + "").attr("marker-end", "url(#markB)");
+
+                arc_I_V_RY.attr("class","blueI").attr("d","M" + (centerX+IxB-xScale(0)) +"," + (centerY+IyB-yScale(0)) + "A" + 50 + "," + 50 + " 0 0 0," + (centerX+(xB-xScale(0))/2+ "," + (centerY+(yB-yScale(0))/2 ) ) ).attr("marker-end", "url(#markB)");
+                arc_I_V_labelRY.text("+" + XoverR.value+" °").attr("class","blueI").attr("x",centerX+( -(centerX+IxB-xScale(0)) + ( (centerX+(xB-xScale(0))/1 )))/1.8  ).attr("y",centerY+( -(centerY+IyB-yScale(0)) + (centerY+(yB-yScale(0))/1 ) )/1.8  ).style("font-size","16px");
+
+                label_Vc_fault.text('Vc').attr("class","blueI").attr("x", (centerX+1.2*(xB-xScale(0)) )).attr("y", (centerY+1.2*(yB-yScale(0)) )); 
+                label_Ic_fault.text('Ic').attr("class","blueI").attr("x", (centerX-0.5*(IxB-xScale(0)) )).attr("y", (centerY-0.5*(IyB-yScale(0)) )); 
+
+                rectVABbis.attr("class","Vab")
+                .attr("x", centerX+((x-xY)/2)-5).attr("y", (centerY+(y-yY)/2) - 20);
+                labelVABbis.text('Vab').attr("class","VabTrip").style({"stroke": "SteelBlue","fill": "SteelBlue","font-size": "24px"})
+                .attr("x", (centerX+(x-xY)/2)).attr("y", (centerY+(y-yY)/2)); 
+
+                rectVPol.attr("class","Vab").
+                attr("x", centerX+0.5*Math.sqrt((x-xY)*(x-xY)+(y-yY)*(y-yY))*Math.cos(characteristic_angle+relay_angle+(Math.PI/2))-5)
+                .attr("y", (centerY+0.5*Math.sqrt((x-xY)*(x-xY)+(y-yY)*(y-yY))*Math.sin(characteristic_angle+relay_angle+(Math.PI/2)) - 20)); 
+                labelVPol.text('Vpol').attr("class","VabTrip").style({"stroke": "SteelBlue","fill": "SteelBlue","font-size": "24px"})
+                .attr("x", (centerX+0.5*Math.sqrt((x-xY)*(x-xY)+(y-yY)*(y-yY))*Math.cos(characteristic_angle+relay_angle+(Math.PI/2))))
+                .attr("y", (centerY+0.5*Math.sqrt((x-xY)*(x-xY)+(y-yY)*(y-yY))*Math.sin(characteristic_angle+relay_angle+(Math.PI/2))));  
+                NoTrip.text('No Trip').attr("class","VabTrip").style({"stroke": "SteelBlue","fill": "SteelBlue","font-size": "24px"}).attr("x", (centerX-0.75*(x-xY))).attr("y", (centerY-0.75*(y-yY))).attr("font-size",34).attr("font-weight","bold");
+                Trip.text('Trip').attr("class","VabTrip").style({"stroke": "SteelBlue","fill": "SteelBlue","font-size": "24px"}).attr("x", (centerX+0.9*Math.sqrt((x-xY)*(x-xY)+(y-yY)*(y-yY))*Math.cos(Math.atan2((y-yY),(x-xY))+(-Math.PI/2)+(Math.PI/12)))).attr("y", (centerY+0.9*Math.sqrt((x-xY)*(x-xY)+(y-yY)*(y-yY))*Math.sin(Math.atan2((y-yY),(x-xY))+(-Math.PI/2)+(Math.PI/12)))).attr("font-size",34).attr("font-weight","bold").attr("title","SOme text"); 
+
+            
+                
+                time +=0.035;
+
+                
+                //--- tu ue ater for demo d3.select("#char").style("display","none");
+                
+                setTimeout(draw, 35); } 
+                draw(); 
+                relay_angle = -45 * Math.PI/ 180;
+                d3.select("#Rchar").on("input", function() {
+                relay_angle = (-Rchar)* Math.PI / 180; 
+                });
+
+                })();
+
+
+
+            //---------------------------DDD      ----------------------------
+            //---------------------------D  DD    ----------------------------
+            //---------------------------D   DD   ----------------------------
+            //---------------------------D    DD  ----------------------------
+            //---------------------------D  DD    ----------------------------
+            //---------------------------DDD      ----------------------------
+   
+        </script>
+</main>
+</body>
+</html>

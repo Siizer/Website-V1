@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    height:100%;
+}
+
+header {
+    background-color: #fff;
+    height:35px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: #fff;
+    border-bottom: 2px solid #4682B4;
+}
+
+nav a {
+    color: #4682B4;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #333;
+}
+
+main {
+    padding: 0;
+}
+
+h1 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 0.75rem;
+    margin-bottom: 0.85rem;
+}
+
+button {
+    font-size: 0.75rem;
+    background-color: #4682B4;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.content {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+#vis, #svgTitle, #svgTitleTextContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#vis_svg {
+    width: 100%;
+    height: 100%;
+}
+  
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+.slide.active {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+#slide_title {
+    font-size: "50px";
+    stroke: steelblue;
+    fill: steelblue;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;    
+}
+
+.axis circle {fill: none;stroke: #777;stroke-dasharray: 1,4;}
+.axis :last-of-type circle {stroke: #333;stroke-dasharray: none;}
+.axis path,.axis line {fill: none;stroke: black;shape-rendering: crispEdges;}
+.axis text {font-family: sans-serif;font-size: 11px;stroke: #777;}
+.x.axis line {stroke: #000;}
+.x.axis .minor {stroke-opacity: .5;}
+.x.axis path {fill: none;stroke: #000;}
+.y.axis line, .y.axis path {fill: none;stroke: #000;}
+        
+#line_projection {fill:none;stroke: rgba(255,255,225,0);stroke-width: 2px;}
+#line_projection.intersects{fill: white;stroke: green;stroke-dasharray: 3,3;}
+.frame {fill: none;stroke: #000;}
+.segment {stroke: #000;stroke-width: 1.5px;}
+label {text-anchor: middle;fill:none;stroke: black; }
+
+.circle {fill: none;stroke: rgba(255,255,225,0);stroke-width: 2px;}
+circle.vectora {fill: rgba(255, 255, 255, 0.1);stroke: #000;stroke-width: 0.2px;}circle.vectorb {fill: rgba(255, 255, 255, 0.1);stroke: #000;stroke-width: 0.2px;}circle.vectorc {fill: rgba(255, 255, 255, 0.1);stroke: #000;stroke-width: 0.2px;} 
+
+
+text.intersects {fill: white;stroke: black;}
+text.texta,text.textai {fill : #DC143C;font-size: 24px; font-weight: bold; }
+#va_before,#ampva,#angva,#equala {fill : #DC143C;font-color: #DC143C;color: #DC143C;font-size: 24px; font-weight: 900; }
+#vb_before,#ampvb,#angvb,#equalb {fill : gold;font-color: gold;color: gold;font-size: 24px; font-weight: 900; }
+#vc_before,#ampvc,#angvc,#equalc {fill : blue;font-color: blue;color: blue;font-size: 24px; font-weight: 900; }
+#v0_before,#ampv0,#angv0,#equal0 {fill : darkgrey;font-color: darkgrey;color: darkgrey;font-size: 24px; font-weight: 900; }
+#v1_before,#ampv1,#ang1,#equal1 {fill : limegreen;font-color: limegreen;color: limegreen;font-size: 24px; font-weight: 900; }
+#v2_before,#ampv2,#angv2,#equal2 {fill : magenta;font-color: magenta;color: magenta;font-size: 24px; font-weight: 900; }
+text.textadash { fill : #DC143C;font-weight:bold;font-size: 24px; font-weight: bold; }
+text.textadashangle { fill : #DC143C; font-weight:bold;  font-size: 24px; font-weight: bold;  }
+text.text0butt { fill:darkgrey;font-weight:bold; font-size: 24px; font-weight: bold;}
+text.text0buttangle { fill:darkgrey; font-weight:bold; font-size: 24px;  font-weight: bold;}
+text.textb,text.textbi { fill : gold ; font-size: 24px; font-weight: bold;}
+text.textbdash { fill : gold ;font-weight:bold;font-size: 24px;font-weight: bold;}
+text.textbdashangle {fill : gold; font-weight:bold;font-size: 24px;font-weight: bold;}
+text.text1butt { fill:limegreen;font-weight:bold;font-size: 24px;font-weight: bold;}
+text.text1buttangle {fill:limegreen;font-weight:bold;font-size: 24px;font-weight: bold;}
+text.textc,text.textci {fill : blue;font-size: 24px;font-weight: bold;}
+text.textcdash {fill : blue;font-weight:bold;font-size: 24px;font-weight: bold;}
+text.textcdashangle {fill : blue;font-weight:bold;font-size: 24px;font-weight: bold;}
+text.text2butt {fill:magenta;font-weight:bold;font-size: 24px;font-weight: bold;}
+text.text2buttangle {fill:magenta;font-weight:bold;font-size: 24px;font-weight: bold;}
+    
+polyline {stroke-width: 5px;}
+polyline.vectora,polyline.vectorai {stroke: #DC143C; stroke-width: 3.5px;stroke-linecap: round;}
+polyline.vectorb,polyline.vectorbi {stroke: gold;stroke-width: 3.5px;stroke-linecap: round;}
+polyline.vectorc,polyline.vectorci {stroke: blue;stroke-width: 3.5px;stroke-linecap: round;} 	
+ 
+polyline.vector2 {stroke: magenta;stroke-width: 4px;stroke-dasharray: 3;}polyline.vector2bis {stroke: magenta;stroke-width: 4px;stroke-dasharray: 3;}	
+polyline.vector1 {stroke: limegreen;stroke-width: 4px;stroke-dasharray: 3;}	polyline.vector1bis {stroke: limegreen;stroke-width: 4px;stroke-dasharray: 3}      
+polyline.vector0 {stroke: darkgrey;stroke-width: 4px;stroke-dasharray: 3;} polyline.vector0bis {stroke: darkgrey;stroke-width: 4px;stroke-dasharray: 3;}       
+
+polyline.vectorar,polyline.vectoral,polyline.vectoralr {stroke: #DC143C;stroke-width: 3.5px;stroke-linecap: round;}      
+polyline.vectorbr,polyline.vectorbl,polyline.vectorblr {stroke: gold;stroke-width: 3.5px;stroke-linecap: round;}
+polyline.vectorcr,polyline.vectorcl,polyline.vectorclr {stroke: blue;stroke-width: 3.5px;stroke-linecap: round;}   
+polyline.xabciss,polyline.yordinate,polyline.xabcissr,polyline.yordinater,polyline.xabcissl,polyline.yordinatel,polyline.xabcisslr,polyline.yordinatelr {stroke: black;stroke-width: 0.3px;stroke-opacity: .5;stroke-linecap: round;}  	
+
+#mark2 {fill:magenta;} #mark2bis {fill:magenta;} #mark1 {fill:limegreen;} #mark1bis {fill:limegreen;} #mark0 {fill:darkgrey;} #mark0bis {fill:darkgrey;}       
+marker {fill:black;} 
+#marka,#markar,#markal,#markalr {fill:#DC143C;} #markb,#markbr,#markbl,#markblr {fill:gold;} #markc,#markcr,#markcl,#markclr {fill:blue;} 
+#markR {stroke:red;} #markY {stroke:yellow;} #markB {stroke:blue;} 
+#markPol {stroke:SteelBlue; stroke-width: 2px;}       
+#markblk {fill: rgba(0,0,0,0);} 	
+table {border-collapse: collapse;}
+table, th, td,tr,tbody {padding: 0;margin:0; border-bottom: 0px;background-color:transparent;}
+td{vertical-align: middle;text-align: justify;}
+
+.trig .axis {stroke: #999;}
+.trig circle {stroke: #4682B4;stroke-width: 2px;fill: none;}
+.trig line {stroke-width: 2px;fill: none;stroke: #999;}
+.trig rect {stroke-width: 2px;}
+.trig text {fill: SteelBlue;color: SteelBlue;font-family: sans-serif;font-size: 24px;vertical-align: middle;}
+
+.red,.redI {stroke: red;stroke-width: 2px;fill: rgba(0,0,0,0); font-weight: normal;font-size: 24px;font-family: arial;}
+.yellow,.yellowI {stroke: yellow;stroke-width: 2px;fill: rgba(0,0,0,0); font-weight: normal;font-size: 24px;font-family: arial;}
+.blue,.blueI {stroke: blue;stroke-width: 2px;fill: rgba(0,0,0,0); font-weight: normal;font-size: 24px;font-family: arial;}
+.steelVab,.steelVbc,.steelVca {stroke: SteelBlue;fill: SteelBlue;stroke-width: 2px;}
+.arcRY,.arcYB,.arcBR {stroke: SteelBlue;fill: none;stroke-width: 2px;}
+.dotted {stroke: #4682B4;stroke-width: 0.1px;stroke-dasharray: 3;}
+
+#diagram_container  form{position:absolute;}  
+#diagram_container #svg4627{position: absolute;top: 0px;}
+#diagram_container {position: relative;height: 500px;}
+#directional_Description_container {margin-left: 10px;padding-left:20px;padding-right: 20px;}
+
+.form9, .form9_67, .form9_XoverR, .form10, .form11, .form12, .form12_4, .form13_4, .forminput_1, .forminput_2, .forminput_3 {color: #2E6E9E;font-weight:bold;border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;font-size:10px;}
+#alfa, #divider, #sampleadd, #Rload, #Vn, #R, #X{width:50px;height: 15px;border-style:solid;border-color:rgba(0,0,0,0);border-width:0px;font-size:10px;}
+#alfaout, #dividerout, #sampleaddout, #amplifierout, #Vnout, #Rout, #Xout{width:10px;height: 10px;color:rgba(0,0,0,1);font-size:10px;}
+
+.form1-3 {top:15.837455px;left:283.14728px;width:40px;color: rgba(0,0,0,0);border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;fill:  rgba(255,100,10,0.5);}
+#Zsr{width:40px;height: 20px;font-size: 20px; padding-right:3px;border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;background-color:  rgba(255,100,10,0.5);text-align: right;}
+.form2-3 {top:15.837455px;left:356.7869px;width:40px;color: rgba(0,0,0,0);border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;fill:  rgba(255,100,10,0.5);}
+#Zsx{width:40px;height: 20px;font-size: 20px; padding-right:3px;border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;background-color:  rgba(255,100,10,0.5);text-align: right;}
+.form3-3 {top:15.837455px;left:601.34534px;width:40px;color: rgba(0,0,0,0);border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;fill:  rgba(255,100,10,0.5);}
+#Zs0r{width:40px;height: 20px;font-size: 20px; padding-right:3px;border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;background-color:  rgba(255,100,10,0.5);text-align: right;}
+.form4-3 {top:15.837455px;left:674.98492px;width:40px;color: rgba(0,0,0,0);border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;fill:  rgba(255,100,10,0.5);}
+#Zs0x{width:40px;height: 20px;font-size: 20px; padding-right:3px;border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;background-color:  rgba(255,100,10,0.5);text-align: right;}
+.form5-3 {top:50.18264px;left:283.14728px;width:40px;color: rgba(0,0,0,0);border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;fill:  rgba(255,100,10,0.5);}
+#Zlr{width:40px;height: 20px;font-size: 20px; padding-right:3px;border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;background-color:  rgba(255,100,10,0.5);text-align: right;fill:  rgba(255,100,10,0.5);}
+.form6-3 {top:50.18264px;left:356.7869px;width:40px;color: rgba(0,0,0,0);border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;fill:  rgba(255,100,10,0.5);}
+#Zlx{width:40px;height: 20px;font-size: 20px; padding-right:3px;border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;background-color:  rgba(255,100,10,0.5);text-align: right;}
+.form7-3 {top:50.18264px;left:601.34534px;width:40px;color: rgba(0,0,0,0);border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;fill:  rgba(255,100,10,0.5);}
+#Zl0r{width:40px;height: 20px;font-size: 20px; padding-right:3px;border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;background-color:  rgba(255,100,10,0.5);text-align: right;}
+.form8-3 {top:50.18264px;left:674.98492px;width:40px;color: rgba(0,0,0,0);border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;fill:  rgba(255,100,10,0.5);}
+#Zl0x{width:40px;height: 20px;font-size: 20px; padding-right:3px;border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;background-color:  rgba(255,100,10,0.5);text-align: right;}
+.form9-3 {top:95.659813px;left:50.771591px;width:40px;color: rgba(0,0,0,0);border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;fill:  rgba(255,100,10,0.5);}
+#V{width:50px;height: 20px;font-size: 20px; padding-right:3px;border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;background-color:  rgba(255,100,10,0.5);text-align: right;}
+.form10-3 {top:159.27913px;left:756.81744px;width:40px;color: rgba(0,0,0,0);border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;fill:  rgba(255,100,10,0.5);}
+#rf{width:40px;height: 20px;font-size: 20px; padding-right:3px;border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;background-color:  rgba(255,100,10,0.5);text-align: right;}
+.form11-3 {top:193.64461px;left:92.12693px;width:40px;color: rgba(0,0,0,0);border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;fill:  rgba(255,100,10,0.5);}
+#zn{width:40px;height: 20px;font-size: 20px; padding-right:3px;border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;background-color:  rgba(255,100,10,0.5);text-align: right;}
+.form16-3 {top:375.45178px;left:240.93411px;width:40px;color: rgba(0,0,0,0);border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;fill:  rgba(255,100,10,0.5);}
+#distance{width:45px;height: 20px;font-size: 20px; padding-right:3px;border-style:solid;border-color:rgba(0,0,0,1);border-width:0px;background-color:  rgba(255,100,10,0.5);text-align: right;}
