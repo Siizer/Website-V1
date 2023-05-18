@@ -8,6 +8,7 @@ html, body {
     font-family: Arial, sans-serif;
     line-height: 1.6em;
     height:100%;
+    overflow: hidden;
 }
 
 header {
@@ -134,8 +135,8 @@ button:hover {
       ul.submenu {
         display: none;
         position: absolute;
-        top: 0;
-        left: 100%;
+        top: 100%;
+        left: 0;
         background-color: #f0f0f0;
         padding: 5px;
         z-index: 1;
@@ -154,6 +155,38 @@ button:hover {
         background-color: #ddd;
       }
 
+      .dropdown {
+        position: relative;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+        background-color: #f9f9f9;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown:hover .submenu,
+    .dropdown.show .submenu {
+        display: block;
+    }
+
+    #li_IEEE:hover,#li_US:hover,#li_IEC:hover,#li_UK:hover {
+        background-color: beige;
+    }
+
+    .submenu li {
+        list-style-type: none;
+    }
+
+    .submenu li a {
+        display: block;
+        padding: 5px 10px;
+    }
 
 .axis circle {fill: none;stroke: #777;stroke-dasharray: 1,4;}
 .axis :last-of-type circle {stroke: #333;stroke-dasharray: none;}
